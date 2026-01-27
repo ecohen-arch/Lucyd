@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """
 Gorgias Macro Bulk Creator for Lucyd
-Creates 26 new macros across 5 categories:
-- Technical Support (6)
+Creates 33 macros across 7 categories:
+- Technical Support (7)
 - Prescription Services (5)
 - Product Questions (6)
 - Warranty & Replacements (5)
 - Social Media (4)
+- Order Management (3)
+- Returns (3)
 """
 
 import requests
@@ -540,6 +542,186 @@ Can't find any of these? Let me know approximately when and where you purchased,
 
 Looking forward to helping you!""",
         "tags": ["WARRANTY", "verification"]
+    },
+
+    # ==================== ORDER MACROS (3 Additional) ====================
+    {
+        "name": "ORDER: WISMO - Shipped",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Great news! Your order has shipped! 🚚
+
+**Order:** {{ticket.customer.integrations.shopify.orders.0.name}}
+**Status:** Shipped
+**Carrier:** Check your shipping confirmation email for tracking details
+
+Click the tracking link in your shipping confirmation email to see real-time delivery updates.
+
+**Typical delivery times:**
+- Standard shipping: 3-5 business days
+- Express shipping: 2-3 business days
+
+Let us know if you have any questions!""",
+        "tags": ["ORDER", "wismo", "shipped"]
+    },
+    {
+        "name": "ORDER: WISMO - Processing",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Your order is being prepared! ⏳
+
+**Order:** {{ticket.customer.integrations.shopify.orders.0.name}}
+**Status:** Processing
+
+**Expected timelines:**
+- Non-prescription orders: Ships in 1-3 business days
+- Prescription orders: 10-15 business days total (includes lens crafting)
+
+We'll send you an email with tracking information as soon as your order ships.
+
+If you ordered prescription lenses, here's what's happening:
+1. Rx verification (1-2 days)
+2. Lens crafting (5-7 days)
+3. Quality inspection (1 day)
+4. Shipping (3-5 days)
+
+Thank you for your patience!""",
+        "tags": ["ORDER", "wismo", "processing"]
+    },
+    {
+        "name": "ORDER: Delay Apology",
+        "body": """Hi {{ticket.customer.firstname}},
+
+I sincerely apologize for the delay with your order. I understand how frustrating it is when an order takes longer than expected.
+
+Let me look into this for you right away. I can see that your order is [status].
+
+Here's what I'm doing:
+1. Checking with our fulfillment team
+2. Confirming the updated timeline
+3. [Exploring expedited shipping options if available]
+
+I'll update you within [timeframe] with more specific information.
+
+Again, I'm sorry for any inconvenience this has caused. We appreciate your patience.
+
+Is there anything else I can help with while I investigate?""",
+        "tags": ["ORDER", "delay", "escalation"]
+    },
+
+    # ==================== SOCIAL MEDIA (4) ====================
+    # ==================== ADDITIONAL RETURN MACROS (3) ====================
+    {
+        "name": "RETURN: Start Return Process",
+        "body": """Hi {{ticket.customer.firstname}},
+
+I'd be happy to help you start a return!
+
+**Our Return Policy:**
+- 30 days from delivery date
+- Items must be unworn with original tags
+- Free return shipping (we provide the label)
+
+**Important Note:**
+Prescription lenses are non-refundable as they are custom-made. However, we can help with:
+- Frame exchanges
+- Vision issue corrections (free remake if our error)
+
+**To process your return:**
+1. Confirm your order number
+2. Let me know the reason for return
+3. I'll email you a prepaid return label
+
+**What happens next:**
+- Pack the item securely
+- Attach our label and drop at any USPS location
+- Refund processed within 5-7 business days of receipt
+
+Ready to proceed? Just confirm your order number!""",
+        "tags": ["RETURN", "start-return"]
+    },
+    {
+        "name": "RETURN: Rx Lenses Non-Returnable",
+        "body": """Hi {{ticket.customer.firstname}},
+
+I understand you'd like to return your prescription glasses. Unfortunately, prescription lenses are non-refundable because they are custom-made specifically for your prescription.
+
+**However, here's what we CAN do:**
+
+**If there's a vision problem:**
+- We'll remake the lenses at no charge (if the error is ours)
+- Just let us know what issues you're experiencing
+
+**If it's a fit issue:**
+- We can exchange the frames (free exchange within 30 days)
+- Your prescription lenses may be transferable
+
+**If you simply changed your mind:**
+- We can discuss partial credit options
+- Contact us to explore alternatives
+
+I know this isn't the answer you were hoping for, but I want to make sure we find a solution that works for you.
+
+What specific issue are you experiencing? I'd love to help resolve it.""",
+        "tags": ["RETURN", "prescription", "non-returnable"]
+    },
+    {
+        "name": "RETURN: Refund Status Update",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Thanks for checking on your refund! Let me provide an update.
+
+**Typical refund timeline:**
+After we receive your return:
+- Processing & inspection: 1-2 business days
+- Refund issued: 3-5 business days
+- Appears in account: 3-5 additional days (depends on bank)
+
+**Total: 7-12 business days from return delivery**
+
+**Refund Method:**
+Your refund will be returned to your original payment method:
+- Credit card → Same card
+- PayPal → PayPal account
+- Shop Pay → Original payment source
+
+**Check for email:**
+We send a confirmation email when your refund is processed. Check your spam/promotions folder if you haven't seen it.
+
+I can look up your specific return status - just confirm your order number and I'll check right away!""",
+        "tags": ["RETURN", "refund-status"]
+    },
+
+    # ==================== ADDITIONAL TECH MACRO ====================
+    {
+        "name": "TECH: Battery Optimization Tips",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Here are some tips to get the most out of your Lucyd glasses battery:
+
+**Expected Battery Life:**
+- Music/podcasts: 6-8 hours
+- Phone calls: 4-5 hours
+- Mixed use: 5-6 hours
+
+**To Maximize Battery:**
+
+1. **Lower your volume** - Higher volume drains faster
+2. **Stay close to your phone** - Bluetooth uses less power at closer range (within 10 feet is ideal)
+3. **Turn off when not using** - Even standby uses some power
+4. **Keep firmware updated** - Updates often include battery optimizations (check the Lucyd app)
+5. **Avoid extreme temperatures** - Heat and cold affect battery performance
+
+**Quick Charge Option:**
+15 minutes of charging gives about 2 hours of use!
+
+**Battery Health Note:**
+Like all lithium batteries, capacity naturally decreases over time:
+- Year 1: Full capacity
+- Year 2: ~80% capacity
+
+If your battery drains extremely fast (1-2 hours) and your glasses are less than a year old, this may be a warranty issue. Let me know and I can help!""",
+        "tags": ["TECH-SUPPORT", "battery", "tips"]
     },
 
     # ==================== SOCIAL MEDIA (4) ====================

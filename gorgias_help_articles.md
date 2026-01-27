@@ -1349,4 +1349,1975 @@ Not covered under warranty. Keep away from heavy water exposure!
 
 ---
 
+---
+
+## Category 8: Additional Articles (Expansion Phase)
+
+### Article 8.1: How to Unbox Your Lucyd Glasses
+
+**Title:** How to Unbox and Charge Your Lucyd Glasses
+**Category:** Getting Started
+**Tags:** unboxing, setup, new
+
+---
+
+**Welcome to Lucyd!**
+
+Your smart eyewear has arrived. Here's how to get started.
+
+**Step 1: Unbox**
+
+Inside your package you'll find:
+- Your Lucyd smart glasses
+- Magnetic charging cable
+- Carrying pouch
+- Quick start guide
+- Lens cloth
+
+**Step 2: Initial Charge**
+
+Before first use, charge your glasses for at least 1 hour:
+1. Connect magnetic cable to USB power source
+2. Attach magnetic pins to charging contacts on temples
+3. LED turns red = charging
+4. LED turns green = fully charged
+
+**Step 3: Remove Protective Film**
+
+Check for any protective film on the lenses and remove it.
+
+**Step 4: Ready to Pair!**
+
+Once charged, follow the Bluetooth pairing guide to connect to your phone.
+
+---
+
+### Article 8.2: Understanding LED Indicator Lights
+
+**Title:** Understanding LED Indicator Lights
+**Category:** Getting Started
+**Tags:** LED, lights, indicators
+
+---
+
+**LED Light Guide**
+
+Your Lucyd glasses communicate through LED lights on the temples.
+
+**Charging Status**
+| LED | Meaning |
+|-----|---------|
+| Red (solid) | Charging |
+| Green (solid) | Fully charged |
+| No light | Not connected to power |
+
+**Power & Connection**
+| LED | Meaning |
+|-----|---------|
+| Blue (flashing) | Pairing mode |
+| Blue (solid, brief) | Connected |
+| Red (flashing) | Low battery (<10%) |
+
+**During Use**
+| LED | Meaning |
+|-----|---------|
+| Brief flash on tap | Gesture recognized |
+| No light | Normal operation |
+
+**Battery Warnings**
+
+When battery reaches 10%, you'll hear a voice prompt and see the LED flash red. Charge soon!
+
+---
+
+### Article 8.3: How to Answer and End Calls
+
+**Title:** How to Answer and End Calls
+**Category:** Getting Started
+**Tags:** calls, phone, answer
+
+---
+
+**Answering Calls**
+
+When you receive a phone call:
+1. You'll hear a ringtone through the glasses
+2. **Single tap** the LEFT temple to answer
+3. Start talking - the microphone is built-in
+
+**During Calls**
+- Your caller hears you through the temple microphone
+- You hear them through the open-ear speakers
+- Adjust volume by tapping the right temple
+
+**Ending Calls**
+- **Single tap** the LEFT temple to hang up
+- Or end the call from your phone
+
+**Rejecting Calls**
+- **Double tap** the LEFT temple to reject
+- Call goes to voicemail
+
+**Call Quality Tips**
+- Speak at normal volume
+- Position glasses securely on face
+- Minimize background noise when possible
+
+---
+
+### Article 8.4: Tips for Optimal Audio Quality
+
+**Title:** Tips for Optimal Audio Quality
+**Category:** Getting Started
+**Tags:** audio, sound, quality, tips
+
+---
+
+**Understanding Open-Ear Audio**
+
+Lucyd glasses use open-ear speakers that direct sound toward your ears while keeping them uncovered. This is different from headphones or earbuds.
+
+**Best Practices**
+
+**1. Proper Fit**
+- Glasses should sit securely on your nose and ears
+- Temples should rest close to your head
+- Speaker area should align with your ear opening
+
+**2. Volume Balance**
+- Increase glasses volume (tap right temple)
+- Adjust phone media volume separately
+- Start at 50% and adjust up
+
+**3. Environment Matters**
+- Works best in moderate noise levels
+- Very loud environments may overpower audio
+- Quiet settings allow lower volume
+
+**4. Ear Positioning**
+- Speakers are on the inside of temples
+- Make sure temples are positioned near ears
+- Try slight adjustments for best sound
+
+**Audio Expectations**
+- Great for calls, podcasts, audiobooks
+- Sufficient bass for casual music listening
+- Not designed to replace studio headphones
+
+---
+
+### Article 8.5: How to Switch Between Devices
+
+**Title:** How to Switch Between Devices
+**Category:** Getting Started
+**Tags:** switch, devices, multiple, pairing
+
+---
+
+**Lucyd can remember multiple paired devices**
+
+**Switching Method 1: Manual**
+1. Disconnect Bluetooth on current device
+2. Enable Bluetooth on new device
+3. Glasses auto-connect to the new device
+
+**Switching Method 2: From Phone**
+1. Go to Bluetooth settings on desired device
+2. Select "Lucyd" from paired devices
+3. Glasses will switch to that device
+
+**Pairing Additional Devices**
+1. Disconnect from current device
+2. Put glasses in pairing mode (hold button 5 sec)
+3. Pair new device
+4. Both devices stay in memory
+
+**Limitations**
+- Can only actively connect to one device at a time
+- Can remember up to 8 paired devices
+- Oldest pairing removed when adding 9th device
+
+**Tip**: Name your Lucyd glasses in each device's Bluetooth settings for easy identification.
+
+---
+
+### Article 8.6: Voice Assistant Setup
+
+**Title:** Setting Up Your Voice Assistant
+**Category:** Getting Started
+**Tags:** Siri, Google, voice, assistant
+
+---
+
+**Activate Your Voice Assistant**
+
+**For iPhone (Siri)**
+1. Ensure "Hey Siri" is enabled in iPhone settings
+2. Press and hold LEFT temple
+3. Wait for Siri tone
+4. Speak your command
+
+**For Android (Google Assistant)**
+1. Ensure Google Assistant is enabled
+2. Press and hold LEFT temple
+3. Wait for Google tone
+4. Speak your command
+
+**What You Can Do**
+- "Send a text to [contact]"
+- "Play [song/artist/playlist]"
+- "What's the weather?"
+- "Navigate to [destination]"
+- "Call [contact]"
+- "Set a timer for 5 minutes"
+
+**Tips**
+- Speak clearly at normal volume
+- Wait for the tone before speaking
+- Keep commands concise
+- Ensure phone is nearby
+
+---
+
+### Article 8.7: Why Is My Order Delayed?
+
+**Title:** Why Is My Order Delayed?
+**Category:** Orders & Shipping
+**Tags:** delay, late, processing
+
+---
+
+**Common Reasons for Delays**
+
+**Prescription Orders (Most Common)**
+- Rx verification can take 1-2 days
+- Custom lens crafting takes 5-7 days
+- Total: 10-15 business days is normal
+- Any Rx issues extend this timeline
+
+**High Volume Periods**
+- Holidays (Nov-Dec, Valentine's)
+- Sales events
+- New product launches
+
+**Address Issues**
+- Incomplete address
+- Can't verify address
+- International customs delays
+
+**Payment Issues**
+- Payment verification pending
+- Failed payment retry
+
+**Weather & Carrier Delays**
+- Severe weather
+- Carrier volume issues
+- Regional delays
+
+**What to Do**
+
+1. Check your email for any messages from us
+2. Verify your shipping address is correct
+3. Contact us with your order number
+
+We'll investigate and provide an updated timeline!
+
+---
+
+### Article 8.8: How to Update My Shipping Address
+
+**Title:** How to Update My Shipping Address
+**Category:** Orders & Shipping
+**Tags:** address, change, shipping, modify
+
+---
+
+**Before Order Ships**
+
+Contact us IMMEDIATELY with:
+- Order number
+- Correct shipping address
+- "URGENT - Address Change" in subject
+
+We can only change addresses before the order enters fulfillment.
+
+**After Order Ships**
+
+**Option 1: Contact Carrier**
+1. Get tracking number from shipping email
+2. Go to carrier website (USPS, UPS, FedEx)
+3. Request address change or hold at location
+4. Note: Fees may apply
+
+**Option 2: Refuse Delivery**
+- Don't accept the package
+- It returns to us automatically
+- We'll reship to correct address
+
+**Option 3: Redirect Service**
+- USPS: Informed Delivery
+- UPS: UPS My Choice
+- FedEx: Delivery Manager
+
+**Prevention Tips**
+
+Before ordering, double-check:
+- Apartment/suite number
+- City and state spelling
+- ZIP code accuracy
+- "Ship to" vs "Bill to" addresses
+
+---
+
+### Article 8.9: I Received the Wrong Item
+
+**Title:** I Received the Wrong Item
+**Category:** Orders & Shipping
+**Tags:** wrong, incorrect, mistake
+
+---
+
+**We're sorry for the mix-up!**
+
+**What to Do**
+
+1. **Don't Return Yet** - Keep the incorrect item until we advise
+
+2. **Contact Us** with:
+   - Order number
+   - What you ordered
+   - What you received
+   - Photo of the item received
+
+3. **We'll Send the Correct Item**
+   - Ships immediately
+   - Free expedited shipping
+   - No need to wait for return
+
+4. **Return Instructions**
+   - We'll send a prepaid label
+   - Ship back the wrong item
+   - No rush - 14 days is fine
+
+**Timeline**
+- Correct item ships within 1-2 business days
+- You'll receive tracking via email
+
+---
+
+### Article 8.10: Part of My Order Is Missing
+
+**Title:** Part of My Order Is Missing
+**Category:** Orders & Shipping
+**Tags:** missing, incomplete, partial
+
+---
+
+**Check These First**
+
+- [ ] Multiple packages? Some orders ship separately
+- [ ] Check all packing material in box
+- [ ] Look for small items in the pouch
+- [ ] Check tracking - more packages coming?
+
+**Items Commonly Shipped Separately**
+- Prescription lenses (added later)
+- Accessories
+- Promotional items
+
+**Contact Us If**
+
+After checking, if something is missing:
+- Provide order number
+- List what's missing
+- Confirm what you did receive
+
+**Resolution**
+
+We'll either:
+- Ship the missing item immediately
+- Confirm it's coming in separate package
+- Issue refund for missing item
+
+---
+
+### Article 8.11: What If I Don't Know My PD?
+
+**Title:** What If I Don't Know My PD?
+**Category:** Prescriptions
+**Tags:** PD, measure, unknown
+
+---
+
+**Don't Have Your PD? No Problem!**
+
+PD (Pupillary Distance) isn't always on prescriptions. Here's how to get it:
+
+**Method 1: Lucyd App (Recommended)**
+1. Download the Lucyd app
+2. Open "Measure PD" feature
+3. Follow camera instructions
+4. Takes 30 seconds!
+
+**Method 2: Ask Your Eye Doctor**
+- Call the office that did your exam
+- They have it on file from your exam
+- It's your information - they must provide it
+
+**Method 3: Check Old Glasses**
+- Visit any optical store
+- They can measure PD from existing glasses
+- Usually free or minimal charge
+
+**Method 4: Measure at Home**
+1. Stand 8 inches from mirror
+2. Hold mm ruler against brow
+3. Close right eye, align 0 with left pupil center
+4. Close left, open right, read at right pupil
+5. Repeat 3 times, use average
+
+**Average PD Ranges**
+- Adult women: 57-65mm
+- Adult men: 59-68mm
+- Children: 41-55mm
+
+**Still Stuck?**
+
+Email us a straight-on selfie and we can estimate your PD!
+
+---
+
+### Article 8.12: Prescription Upload Troubleshooting
+
+**Title:** Prescription Upload Troubleshooting
+**Category:** Prescriptions
+**Tags:** upload, error, troubleshoot, prescription
+
+---
+
+**Upload Not Working?**
+
+**File Requirements**
+| Requirement | Spec |
+|-------------|------|
+| File types | JPG, PNG, PDF |
+| Max size | 5MB |
+| Quality | All text readable |
+
+**Common Issues & Fixes**
+
+**"File too large"**
+- Take photo from further back
+- Use PDF instead of image
+- Reduce image resolution
+
+**"Invalid file type"**
+- Convert HEIC to JPG (common on iPhone)
+- Screenshot the file and upload that
+- Try PDF format
+
+**"Upload failed" error**
+- Clear browser cache
+- Try different browser (Chrome recommended)
+- Try desktop instead of mobile
+- Disable VPN if using one
+
+**Photo Quality Tips**
+- Good lighting, no shadows
+- All text clearly readable
+- Include full prescription
+- Avoid glare on paper
+
+**Alternative Methods**
+
+If upload still won't work:
+1. **Email Method**: Send to info@lucyd.co with order number
+2. **Reply Method**: Reply to order confirmation with Rx attached
+3. **Fax Method**: (if you have access) Fax to [number]
+4. **Doctor Contact**: We can request directly from your doctor
+
+---
+
+### Article 8.13: Blue Light Blocking Options
+
+**Title:** Blue Light Blocking Lens Options
+**Category:** Prescriptions
+**Tags:** blue light, lens, screen
+
+---
+
+**What Is Blue Light?**
+
+Blue light is emitted by digital screens (phones, computers, tablets, TVs). Extended exposure can cause:
+- Eye strain and fatigue
+- Headaches
+- Disrupted sleep patterns
+
+**Lucyd Blue Light Options**
+
+**Standard Blue Light Filter**
+- Blocks 30-40% of blue light
+- Nearly clear lens appearance
+- Ideal for everyday screen use
+- Available for Rx and non-Rx
+
+**Enhanced Blue Light Filter**
+- Blocks 50%+ of blue light
+- Slight amber tint visible
+- Best for heavy screen users
+- Extended computer work
+
+**Who Should Get Blue Light Lenses?**
+
+Recommended if you:
+- Work at a computer 4+ hours daily
+- Use phone/tablet frequently
+- Experience digital eye strain
+- Have trouble sleeping after screen time
+- Want preventive eye care
+
+**Included Features**
+
+All Lucyd lenses include:
+- Anti-reflective coating
+- Scratch resistance
+- 100% UV protection
+
+---
+
+### Article 8.14: Transition/Photochromic Options
+
+**Title:** Transition (Photochromic) Lens Options
+**Category:** Prescriptions
+**Tags:** transition, photochromic, sun
+
+---
+
+**What Are Photochromic Lenses?**
+
+Also called "transitions" - these lenses automatically adjust:
+- **Indoors**: Clear lenses
+- **Outdoors**: Darken to sunglasses
+- **UV activated**: More sun = darker
+
+**Benefits**
+- Two glasses in one
+- Automatic adjustment
+- Full UV protection
+- Convenience
+
+**Response Times**
+| Action | Time |
+|--------|------|
+| Darken (outdoors) | 30-60 seconds |
+| Clear (indoors) | 2-5 minutes |
+
+**Limitations**
+
+Photochromic lenses may NOT work well:
+- In cars (windshields block UV)
+- In very cold temperatures (slow reaction)
+- For precise sunglass darkness needs
+
+**Recommendation**
+
+Best for: People who move between indoor/outdoor frequently
+
+Consider polarized instead: For driving or bright outdoor activities
+
+---
+
+### Article 8.15: How to Install Lens Inserts
+
+**Title:** How to Install Prescription Lens Inserts
+**Category:** Prescriptions
+**Tags:** install, lens, insert
+
+---
+
+**If You Received Separate Lens Inserts**
+
+Some Lucyd models use removable prescription lens inserts.
+
+**Installation Steps**
+
+1. **Clean Your Hands**
+   - Wash and dry completely
+   - Avoid touching lens surfaces
+
+2. **Remove Existing Lenses (if any)**
+   - Gently flex frame outward
+   - Push lens out from back
+   - Set aside carefully
+
+3. **Orient New Lenses**
+   - R lens → Right side
+   - L lens → Left side
+   - Coating side faces outward
+
+4. **Insert New Lenses**
+   - Start at top of frame
+   - Press gently until it clicks
+   - Work around edges
+
+5. **Verify Secure Fit**
+   - Lenses should not move
+   - No gaps visible
+   - Clean any fingerprints
+
+**Tips**
+- Work over soft surface (towel)
+- Don't force - should snap in easily
+- If stuck, watch our video tutorial
+
+**Having Trouble?**
+
+Contact us with your order number and we'll help!
+
+---
+
+### Article 8.16: Audio Sounds Tinny or Lacks Bass
+
+**Title:** Audio Sounds Tinny or Lacks Bass
+**Category:** Technical Support
+**Tags:** audio, tinny, bass, quality
+
+---
+
+**Understanding Open-Ear Audio**
+
+Lucyd uses open-ear speakers. This design:
+- Keeps ears uncovered for awareness
+- Directs sound toward ear canal
+- Has less bass than over-ear headphones
+
+**This Is Normal:**
+- Less pronounced bass
+- Sound slightly different from earbuds
+- Can hear environment while listening
+
+**Improve Your Audio**
+
+**1. Check Positioning**
+- Temple speaker should point toward ear opening
+- Glasses should fit snugly
+- Try adjusting glasses position slightly
+
+**2. Maximize Volume**
+- Increase glasses volume (tap right temple)
+- Increase phone media volume
+- Check app equalizer settings if available
+
+**3. Update Firmware**
+- Open Lucyd app
+- Check for firmware updates
+- Install any available updates
+
+**4. Try Different Content**
+- Some audio is mastered with heavy bass
+- Test with various music types
+- Podcasts/audiobooks may sound better
+
+**Not What You Expected?**
+
+If audio seems actually broken (distorted, cutting out), see "No Audio / Sound Issues" troubleshooting.
+
+---
+
+### Article 8.17: Volume Too Low at Max
+
+**Title:** Volume Too Low at Maximum
+**Category:** Technical Support
+**Tags:** volume, quiet, low
+
+---
+
+**Maximize Your Volume**
+
+**Check Both Volume Controls**
+
+There are TWO volume levels:
+1. **Phone volume** - Media/ringer on your device
+2. **Glasses volume** - Controlled via temple taps
+
+Both need to be turned up!
+
+**Phone Settings**
+
+**iPhone:**
+- Settings > Sounds & Haptics
+- Ensure "Change with Buttons" is ON
+- Check Media volume (not just ringer)
+
+**Android:**
+- Settings > Sound
+- Check Media volume slider
+- May have separate Bluetooth volume
+
+**Glasses Volume**
+- Tap and hold RIGHT temple to increase
+- Listen for "volume max" confirmation
+- Note: Tapping too fast may trigger other controls
+
+**Still Too Quiet?**
+
+1. **Update firmware** via Lucyd app
+2. **Factory reset** (hold both buttons 10 sec)
+3. **Check audio balance** in phone accessibility settings
+4. **Test with different apps** (Spotify vs YouTube vs calls)
+
+**Design Consideration**
+
+Open-ear speakers prioritize awareness over isolation. In very loud environments, this limits effective volume.
+
+---
+
+### Article 8.18: Microphone Not Working on Calls
+
+**Title:** Microphone Not Working on Calls
+**Category:** Technical Support
+**Tags:** microphone, calls, voice
+
+---
+
+**Caller Can't Hear You?**
+
+**Quick Fixes**
+
+1. **Check Bluetooth Connection**
+   - Verify connected in phone settings
+   - Try disconnecting and reconnecting
+
+2. **Check Phone Settings**
+   - Ensure microphone permission granted
+   - Audio should route to "Lucyd" not phone
+
+3. **Restart Everything**
+   - Turn glasses off and on
+   - Restart your phone
+   - Reconnect Bluetooth
+
+**Test Your Microphone**
+
+1. Make a test call
+2. Or record a voice memo
+3. Verify audio routes to glasses (not phone)
+
+**On iPhone:**
+- During call, check audio routing icon
+- Should show headset, not phone speaker
+
+**On Android:**
+- During call, check audio output setting
+- Select Lucyd/Bluetooth option
+
+**Still Not Working?**
+
+1. **Factory reset**: Hold both buttons 10 seconds
+2. **Update firmware**: Via Lucyd app
+3. **Try with different calling app** (Phone vs WhatsApp)
+
+If microphone never works after reset, this may be a hardware issue covered under warranty.
+
+---
+
+### Article 8.19: Glasses Won't Enter Pairing Mode
+
+**Title:** Glasses Won't Enter Pairing Mode
+**Category:** Technical Support
+**Tags:** pairing, mode, won't, enter
+
+---
+
+**Pairing Mode Troubleshooting**
+
+**How Pairing Mode Should Work**
+
+1. Turn on glasses (hold button 2 seconds)
+2. Hold button for 5 seconds
+3. You should hear "pairing mode"
+4. LED should flash blue
+
+**If Nothing Happens**
+
+**Step 1: Check Battery**
+- Charge for at least 30 minutes
+- Verify LED lights during charging
+- Low battery may prevent pairing mode
+
+**Step 2: Make Sure Glasses Are ON**
+- Press and hold button 2 seconds first
+- You should hear power-on sound
+- Then try pairing mode (hold 5 more seconds)
+
+**Step 3: Factory Reset**
+- Hold BOTH buttons for 10 seconds
+- Wait for confirmation tone
+- Try pairing mode again
+
+**Step 4: Check for Existing Connection**
+- May already be connected to another device
+- Check all your devices' Bluetooth lists
+- Forget "Lucyd" from all devices first
+
+**Different Button Patterns**
+
+| Action | Button Pattern |
+|--------|----------------|
+| Power On | Hold 2 seconds |
+| Pairing Mode | Hold 5 seconds (from ON) |
+| Factory Reset | Hold BOTH 10 seconds |
+
+**Still Won't Enter Pairing Mode?**
+
+Contact support with:
+- What happens when you try
+- Battery/charging status
+- What you've already tried
+
+---
+
+### Article 8.20: How Long Does Battery Last?
+
+**Title:** Battery Life and Usage Guide
+**Category:** Technical Support
+**Tags:** battery, life, hours
+
+---
+
+**Battery Life Expectations**
+
+| Usage Type | Battery Life |
+|------------|--------------|
+| Music/Podcasts | 6-8 hours |
+| Phone Calls | 4-5 hours |
+| Mixed Use | 5-6 hours |
+| Standby | Up to 2 weeks |
+
+**Factors That Affect Battery**
+
+**Decreases Battery Life:**
+- Higher volume
+- Frequent calls
+- Distance from phone (Bluetooth works harder)
+- Cold temperatures
+- Streaming vs downloaded content
+
+**Extends Battery Life:**
+- Moderate volume
+- Staying close to phone
+- Room temperature
+- Turning off when not in use
+
+**Charging Information**
+
+| Spec | Detail |
+|------|--------|
+| Full charge | ~1.5 hours |
+| Quick charge | 15 min = 2 hrs use |
+| Charging method | Magnetic cable |
+
+**Battery Health Over Time**
+
+Lithium batteries naturally degrade:
+- Year 1: 100% capacity
+- Year 2: ~80% capacity
+- Year 3+: Consider replacement
+
+Significant degradation in year 1? Contact warranty support.
+
+---
+
+### Article 8.21: Charging Cable and Accessories
+
+**Title:** Charging Cable and Accessories
+**Category:** Technical Support
+**Tags:** cable, charging, accessories
+
+---
+
+**Included Charging Cable**
+
+Your Lucyd glasses come with a magnetic charging cable.
+
+**Cable Specifications**
+- Magnetic connection
+- USB-A connector
+- Works with any USB power source
+- 5V/1A minimum recommended
+
+**Using the Cable**
+
+1. Connect USB end to power source
+2. Align magnetic pins with temple contacts
+3. Cable should snap into place
+4. LED indicates charging status
+
+**Need a Replacement Cable?**
+
+Available at lucyd.co/accessories
+- Original magnetic cable
+- Multi-device cable options
+- Travel adapters
+
+**Third-Party Cables**
+
+We recommend using official Lucyd cables. Third-party magnetic cables may:
+- Have wrong pin alignment
+- Provide insufficient power
+- Void warranty if damage occurs
+
+**Charging Accessories**
+
+**Travel Charging Case**
+- Charges glasses on the go
+- Provides 2-3 full charges
+- Protective carrying case
+
+**Desk Charging Stand**
+- Keep glasses charged at workstation
+- Easy magnetic dock
+
+---
+
+### Article 8.22: What Items Cannot Be Returned?
+
+**Title:** What Items Cannot Be Returned
+**Category:** Returns & Exchanges
+**Tags:** non-returnable, final sale, return
+
+---
+
+**Non-Returnable Items**
+
+The following items cannot be returned for refund:
+
+**1. Prescription Lenses**
+- Custom-made to your Rx
+- Cannot be reused or resold
+- Frame exchanges available instead
+
+**2. Used/Worn Items**
+- Items worn beyond trying on
+- Missing original tags
+- Visible wear or damage
+
+**3. Sale/Clearance Items**
+- Final sale items marked at checkout
+- Outlet/clearance purchases
+
+**4. International Orders**
+- Due to customs and shipping complexity
+- Final sale as stated at checkout
+
+**5. Gift Cards**
+- Non-refundable once purchased
+
+**Alternatives Available**
+
+Even if item is non-returnable:
+- **Defective?** Warranty replacement available
+- **Wrong Rx?** Free lens remake if our error
+- **Exchange?** May be possible even if refund isn't
+
+**Before You Buy**
+
+- Double-check frame size using our guide
+- Verify prescription accuracy
+- Review return policy for your order type
+
+---
+
+### Article 8.23: Why Is There a Restocking Fee?
+
+**Title:** Understanding the Restocking Fee
+**Category:** Returns & Exchanges
+**Tags:** restocking, fee, $15
+
+---
+
+**Restocking Fee Explained**
+
+A $15 restocking fee may apply to some returns.
+
+**Why We Charge It**
+
+- Processing and inspection costs
+- Repackaging for resale
+- Inventory management
+- Reduces frivolous returns
+
+**When It Applies**
+- Change of mind returns
+- "Just didn't like it" returns
+- Ordered wrong size/color
+
+**When It's Waived**
+- Defective products
+- Damaged in shipping
+- Wrong item sent
+- Our error in any way
+
+**What It Covers**
+
+The $15 fee is deducted from your refund and covers:
+- Return inspection
+- Repackaging
+- Restocking labor
+- Quality verification
+
+**Avoiding the Fee**
+
+- Use our sizing guide before ordering
+- Read product descriptions carefully
+- Contact us with questions before buying
+- Exchange instead of return (no fee)
+
+---
+
+### Article 8.24: My Refund Hasn't Arrived
+
+**Title:** Refund Not Yet Received
+**Category:** Returns & Exchanges
+**Tags:** refund, waiting, hasn't, arrived
+
+---
+
+**Refund Timeline**
+
+| Stage | Typical Time |
+|-------|--------------|
+| Return delivered to us | Day 0 |
+| Processing & inspection | 1-2 business days |
+| Refund issued | 3-5 business days |
+| Appears in your account | 3-5 more days |
+
+**Total: 7-12 business days from return delivery**
+
+**Check These First**
+
+1. **Verify return was delivered**
+   - Check return tracking number
+   - Confirm delivery date
+
+2. **Check spam/promotions folder**
+   - Look for "Your refund has been processed"
+   - Check the email used for order
+
+3. **Check original payment method**
+   - Credit card statement
+   - PayPal account
+   - Bank account
+
+**Payment-Specific Times**
+
+| Method | Refund Timing |
+|--------|---------------|
+| Credit Card | 3-5 business days after we process |
+| Debit Card | 5-10 business days |
+| PayPal | 1-3 business days |
+| Shop Pay | 3-5 business days |
+
+**Still Missing After 14 Days?**
+
+Contact us with:
+- Order number
+- Return tracking number
+- Date return was delivered
+- Payment method used
+
+We'll investigate and ensure you receive your refund!
+
+---
+
+### Article 8.25: What Is Lucyd Pro 2-Year Insurance?
+
+**Title:** Lucyd Pro 2-Year Insurance
+**Category:** Warranty
+**Tags:** insurance, Lucyd Pro, 2 year, protection
+
+---
+
+**Extended Protection for Your Lucyd Glasses**
+
+Lucyd Pro is our premium protection plan that goes beyond the standard warranty.
+
+**What's Included**
+
+| Coverage | Standard Warranty | Lucyd Pro |
+|----------|-------------------|-----------|
+| Duration | 1 year | 2 years |
+| Manufacturing defects | Yes | Yes |
+| Accidental damage | No | Yes |
+| Water damage | No | Yes |
+| Theft protection | No | Yes |
+| Deductible | $0 | Low deductible |
+
+**Lucyd Pro Covers:**
+- Accidental drops and impacts
+- Cracked or broken frames
+- Water damage beyond IPX4
+- Theft (with police report)
+- Electrical failures
+- All manufacturing defects
+
+**How It Works**
+
+1. Purchase Lucyd Pro at checkout
+2. Register your product
+3. If incident occurs, file a claim
+4. Pay small deductible
+5. Receive replacement
+
+**Pricing**
+
+Lucyd Pro pricing varies by product. Add at checkout.
+
+**Is It Worth It?**
+
+Consider Lucyd Pro if you:
+- Are active or outdoors frequently
+- Have a history of breaking glasses
+- Want peace of mind
+- Use glasses for sports/exercise
+
+---
+
+### Article 8.26: Warranty vs Insurance: What's the Difference?
+
+**Title:** Warranty vs Insurance: What's the Difference?
+**Category:** Warranty
+**Tags:** warranty, insurance, difference, comparison
+
+---
+
+**Quick Comparison**
+
+| Aspect | Standard Warranty | Lucyd Pro Insurance |
+|--------|-------------------|---------------------|
+| Included? | Yes, free | Optional purchase |
+| Duration | 1 year | 2 years |
+| Manufacturing defects | Covered | Covered |
+| Accidental damage | NOT covered | Covered |
+| Water damage | NOT covered | Covered |
+| Theft | NOT covered | Covered |
+| Cost | Free | Varies by product |
+| Claims | Unlimited | Typically 2 claims |
+| Deductible | $0 | Small deductible |
+
+**When Warranty Applies**
+- Speaker stops working
+- Bluetooth failure
+- Battery won't charge (not from damage)
+- Touch controls malfunction
+- Manufacturing defects
+
+**When Insurance Applies**
+- Dropped and cracked frame
+- Sat on glasses
+- Got wet beyond IPX4 rating
+- Stolen from car
+- Pet chewed them
+
+**Making the Choice**
+
+**Standard Warranty is enough if:**
+- You're careful with your glasses
+- You have backup eyewear
+- You primarily use indoors
+
+**Lucyd Pro recommended if:**
+- You're active or outdoors often
+- You tend to break things
+- These are your only glasses
+- You want complete peace of mind
+
+---
+
+### Article 8.27: What Is Open-Ear Audio Technology?
+
+**Title:** What Is Open-Ear Audio Technology?
+**Category:** Product Information
+**Tags:** open-ear, audio, technology, how it works
+
+---
+
+**Understanding Open-Ear Audio**
+
+Lucyd glasses use open-ear audio technology, which is fundamentally different from traditional headphones.
+
+**How It Works**
+
+Instead of sealing your ear canal (like earbuds) or covering your ears (like headphones), Lucyd uses:
+- Directional speakers in the temples
+- Audio waves directed toward your ear canal
+- Your ears remain completely open
+
+**Benefits**
+
+**Situational Awareness**
+- Hear your surroundings
+- Safer for walking, cycling, working
+- Can have conversations while wearing
+
+**Comfort**
+- No ear fatigue from earbuds
+- No sweaty ears from headphones
+- All-day wearable
+
+**Hygiene**
+- Nothing inside your ear canal
+- Easy to clean
+- No ear infection concerns
+
+**Convenience**
+- Always on your face
+- No separate device to carry
+- Instant access to audio
+
+**What to Expect**
+
+**Great For:**
+- Phone calls
+- Podcasts and audiobooks
+- Casual music listening
+- Navigation directions
+- Voice assistants
+
+**Not Designed For:**
+- Noise isolation
+- Studio-quality music
+- Blocking out environment
+- Very loud environments
+
+---
+
+### Article 8.28: How to Clean Your Lucyd Glasses
+
+**Title:** How to Clean Your Lucyd Glasses
+**Category:** Product Information
+**Tags:** clean, care, maintenance
+
+---
+
+**Regular Cleaning**
+
+**Daily Cleaning**
+
+1. Use included microfiber cloth
+2. Gently wipe lenses in circular motion
+3. Clean nose pads with cloth
+4. Wipe temples
+
+**Weekly Deep Clean**
+
+1. Rinse under lukewarm water
+2. Apply small drop of dish soap to fingers
+3. Gently rub lenses and frame
+4. Rinse thoroughly
+5. Pat dry with microfiber cloth
+
+**Do NOT:**
+- Use paper towels (scratches lenses)
+- Use household cleaners (Windex, etc.)
+- Use hot water
+- Submerge electronics/temples
+- Use alcohol on lens coatings
+
+**Cleaning Charging Contacts**
+
+1. Use dry microfiber cloth
+2. Gently wipe temple contacts
+3. Clean cable pins as well
+4. Ensure completely dry before charging
+
+**Cleaning Speakers**
+
+1. Use soft, dry brush
+2. Gently brush speaker grilles
+3. Don't insert anything into openings
+4. Don't use water near speakers
+
+**Storage**
+
+- Store in included pouch
+- Keep away from extreme temperatures
+- Don't leave in hot car
+- Avoid humid environments
+
+---
+
+### Article 8.29: Storage and Travel Tips
+
+**Title:** Storage and Travel Tips
+**Category:** Product Information
+**Tags:** storage, travel, tips, care
+
+---
+
+**Daily Storage**
+
+**At Home**
+- Use the included pouch
+- Store in consistent location
+- Keep charging cable nearby
+- Avoid direct sunlight
+
+**At Work**
+- Use a glasses stand or pouch
+- Don't leave on desk face-down
+- Keep away from liquids
+
+**Don'ts**
+- Don't store in back pocket
+- Don't leave on car dashboard
+- Don't hang on shirt collar
+
+**Travel Tips**
+
+**Carry-On Recommended**
+- Pressure and temperature safer
+- Lithium battery regulations
+- Avoid lost luggage
+
+**Packing**
+- Use a hard case for protection
+- Keep in personal item for easy access
+- Wrap in clothes if no case
+
+**Flying**
+- Bluetooth must be off during takeoff/landing
+- Can use during flight when Bluetooth allowed
+- Keep charged for travel entertainment
+
+**International Travel**
+- Charging cable works with 100-240V
+- May need USB adapter for outlets
+- Check lithium battery airline rules
+
+**Beach/Pool**
+- Don't submerge (IPX4 = splash resistant only)
+- Keep in shade when not wearing
+- Rinse with fresh water if exposed to salt
+
+---
+
+### Article 8.30: Using Lucyd While Driving
+
+**Title:** Using Lucyd Glasses While Driving
+**Category:** Product Information
+**Tags:** driving, safety, legal
+
+---
+
+**Driving with Lucyd Glasses**
+
+**Legal Considerations**
+
+Using Lucyd for audio while driving is similar to using your car radio or Bluetooth headset in most jurisdictions. However:
+- Laws vary by state/country
+- Some areas restrict any ear-covering devices
+- Check your local regulations
+
+**Open-Ear Advantage**
+
+Lucyd's open-ear design means:
+- You can hear traffic and sirens
+- Conversations with passengers are possible
+- Better situational awareness than earbuds
+
+**Safe Use While Driving**
+
+**DO:**
+- Set up navigation before driving
+- Use voice commands for calls
+- Keep volume at reasonable level
+- Focus on the road first
+
+**DON'T:**
+- Manually adjust glasses while driving
+- Watch videos (obviously)
+- Let audio distract from driving
+- Use at volumes that block traffic sounds
+
+**Phone Calls**
+
+Answer/end calls with single tap:
+- Keeps hands on wheel
+- Safer than holding phone
+- Built-in microphone for clear calls
+
+**Navigation**
+
+Get directions through your glasses:
+- Connect to Google Maps or Apple Maps
+- Hear turn-by-turn directions
+- Keep eyes on road, not phone
+
+**Note on Photochromic Lenses**
+
+If you have photochromic (transition) lenses:
+- They may NOT darken in car
+- Windshields block UV that triggers darkening
+- Consider polarized lenses for driving instead
+
+---
+
+---
+
+### Article 8.31: Glasses Disconnecting Frequently
+
+**Title:** Glasses Disconnecting Frequently
+**Category:** Technical Support
+**Tags:** disconnect, dropping, unstable, connection
+
+---
+
+**Frequent Disconnections?**
+
+If your Lucyd glasses keep disconnecting from your phone, try these fixes in order.
+
+**Step 1: Check Distance**
+- Stay within 30 feet of phone
+- Bluetooth works best within 10 feet
+- Walls and obstacles reduce range
+
+**Step 2: Reduce Interference**
+- Move away from WiFi routers
+- Turn off other Bluetooth devices
+- Avoid areas with many wireless devices
+
+**Step 3: Update Everything**
+- Update phone to latest OS
+- Update Lucyd app
+- Update glasses firmware via app
+
+**Step 4: Re-pair Connection**
+1. Forget "Lucyd" in phone Bluetooth
+2. Factory reset glasses (hold both buttons 10 sec)
+3. Pair fresh from scratch
+
+**Step 5: Check Battery**
+- Low battery can cause disconnects
+- Keep glasses above 20% charge
+- Full charge before troubleshooting
+
+**Phone-Specific Issues**
+
+**iPhone:**
+- Settings > Bluetooth > Lucyd > Forget
+- Restart phone
+- Re-pair
+
+**Android:**
+- Settings > Connections > Bluetooth
+- Remove/Unpair Lucyd
+- Clear Bluetooth cache (Settings > Apps > Bluetooth > Clear Cache)
+- Re-pair
+
+---
+
+### Article 8.32: How to Connect to a New Device
+
+**Title:** How to Connect to a New Device
+**Category:** Technical Support
+**Tags:** new device, second phone, additional
+
+---
+
+**Pairing with a New/Additional Device**
+
+**Method 1: Fresh Pairing (Recommended)**
+
+1. On current device, go to Bluetooth and "Forget" Lucyd
+2. Put glasses in pairing mode (hold button 5 seconds)
+3. On new device, enable Bluetooth
+4. Select "Lucyd" from available devices
+5. Confirm connection
+
+**Method 2: Keep Both Devices Paired**
+
+Your Lucyd glasses can remember multiple devices:
+
+1. Disconnect from current device (just turn off Bluetooth)
+2. Put glasses in pairing mode
+3. Pair new device
+4. Both devices stay in memory
+5. Glasses connect to whichever is active
+
+**Switching Between Devices**
+
+- Glasses auto-connect to last used device
+- To switch: disconnect one, connect on other
+- Only one active connection at a time
+
+**Limits**
+- Maximum 8 paired devices stored
+- When adding 9th, oldest is removed
+- Only 1 active connection at once
+
+---
+
+### Article 8.33: Battery Draining Too Quickly
+
+**Title:** Battery Draining Too Quickly
+**Category:** Technical Support
+**Tags:** battery, drain, fast
+
+---
+
+**Battery Life Shorter Than Expected?**
+
+**Normal Battery Life**
+- Music: 6-8 hours
+- Calls: 4-5 hours
+- Mixed: 5-6 hours
+
+If significantly less, try these fixes:
+
+**Reduce Power Consumption**
+
+1. **Lower Volume**
+   - Higher volume = faster drain
+   - Try 70% instead of 100%
+
+2. **Stay Close to Phone**
+   - Bluetooth uses more power at distance
+   - Keep phone within 10 feet
+
+3. **Turn Off When Not Using**
+   - Standby still uses some power
+   - Power off for long breaks
+
+4. **Update Firmware**
+   - Updates often include battery optimizations
+   - Check Lucyd app for updates
+
+**Check Battery Health**
+
+Battery capacity naturally decreases:
+- Year 1: Full capacity
+- Year 2: ~80% capacity
+- Year 3+: Further reduction
+
+**Possible Hardware Issue**
+
+If battery drains in 1-2 hours when new:
+- May be defective battery
+- Contact warranty support
+- Provide order number and purchase date
+
+---
+
+### Article 8.34: Understanding Charging Indicators
+
+**Title:** Understanding Charging Indicators
+**Category:** Technical Support
+**Tags:** charging, LED, indicator, status
+
+---
+
+**LED Charging Guide**
+
+**When Plugged In**
+
+| LED Status | Meaning |
+|------------|---------|
+| Red (solid) | Charging |
+| Green (solid) | Fully charged |
+| No light | Not connected properly |
+| Flashing | Check connection |
+
+**Charging Times**
+
+| State | Time to Full |
+|-------|--------------|
+| Empty (0%) | ~1.5 hours |
+| Low (20%) | ~1 hour |
+| Half (50%) | ~45 minutes |
+
+**Quick Charge**
+- 15 minutes = ~2 hours of use
+
+**Troubleshooting No LED**
+
+1. Check magnetic alignment
+2. Clean contacts on glasses and cable
+3. Try different USB port/adapter
+4. Inspect cable for damage
+
+**During Use (Not Charging)**
+
+| LED Status | Meaning |
+|------------|---------|
+| Red flash | Low battery (~10%) |
+| Blue flash | Pairing mode |
+| Brief flash on tap | Gesture recognized |
+
+**Voice Prompts**
+- "Battery low" = ~10% remaining
+- "Power off" = Battery depleted
+
+---
+
+### Article 8.35: How to File an Insurance Claim (Lucyd Pro)
+
+**Title:** How to File a Lucyd Pro Insurance Claim
+**Category:** Warranty
+**Tags:** insurance, claim, Lucyd Pro
+
+---
+
+**Filing a Lucyd Pro Insurance Claim**
+
+**Before You Start**
+
+Gather these items:
+- [ ] Order number
+- [ ] Lucyd Pro purchase confirmation
+- [ ] Photos of damage
+- [ ] Brief description of incident
+- [ ] Police report (theft only)
+
+**Step 1: Contact Us**
+
+Email: info@lucyd.co
+Subject: "Lucyd Pro Claim - Order #[YOUR ORDER NUMBER]"
+
+Include:
+- What happened
+- When it happened
+- Photos of damage (if applicable)
+- Your order number
+
+**Step 2: Claim Review**
+
+We'll review your claim within 2-3 business days and confirm:
+- Claim is valid
+- Your deductible amount
+- Replacement details
+
+**Step 3: Pay Deductible**
+
+If approved:
+- We'll send deductible payment link
+- Amount depends on your plan
+- Payment confirms replacement order
+
+**Step 4: Receive Replacement**
+
+- New glasses ship after deductible received
+- Standard shipping times apply
+- No need to return damaged pair (usually)
+
+**What's Covered**
+
+- Accidental damage
+- Water damage
+- Theft (with police report)
+- Electrical failure
+- All warranty issues
+
+**Claim Limits**
+
+Most Lucyd Pro plans allow 2 claims during the coverage period.
+
+---
+
+### Article 8.36: International Shipping Details
+
+**Title:** International Shipping Policy Details
+**Category:** Orders & Shipping
+**Tags:** international, shipping, customs
+
+---
+
+**International Shipping Information**
+
+**Currently Shipping To**
+
+- United States (all 50 states)
+- Canada
+- United Kingdom
+- European Union countries
+- Australia
+- New Zealand
+
+**Shipping Times (Estimated)**
+
+| Destination | Non-Rx | With Rx |
+|-------------|--------|---------|
+| Canada | 7-14 days | 14-21 days |
+| UK/EU | 10-18 days | 17-25 days |
+| Australia/NZ | 14-21 days | 21-28 days |
+
+**Important: International Orders Are Final Sale**
+
+Due to:
+- Customs complexity
+- High return shipping costs
+- Varying import regulations
+
+We cannot accept returns from international orders.
+
+**Customs & Duties**
+
+You are responsible for:
+- Import duties
+- Taxes (VAT, GST, etc.)
+- Customs fees
+
+These are NOT included in your order total and are collected by your local customs authority.
+
+**Declared Value**
+
+We declare the actual purchase price. We cannot:
+- Mark as "gift"
+- Undervalue shipments
+- Misrepresent contents
+
+**Tracking**
+
+- Tracking provided for all orders
+- May have gaps during customs processing
+- Delivery confirmation available
+
+**Country Not Listed?**
+
+Contact us - we may be able to arrange special shipping to your location.
+
+---
+
+### Article 8.37: How to Cancel My Order
+
+**Title:** How to Cancel My Order
+**Category:** Orders & Shipping
+**Tags:** cancel, cancellation, stop order
+
+---
+
+**Cancellation Policy**
+
+**Within 2 Hours of Ordering**
+- Best chance for full cancellation
+- Contact us IMMEDIATELY
+- Include "URGENT - Cancel" in subject
+
+**After 2 Hours / Already Processing**
+
+Once order enters fulfillment:
+- Cannot be cancelled
+- Will need to return after delivery
+
+**Prescription Orders**
+
+If Rx lenses already in production:
+- Cannot be cancelled
+- Lenses are custom-made
+- Frame value only may be refundable
+
+**How to Request Cancellation**
+
+**Email Method:**
+- Send to: info@lucyd.co
+- Subject: "URGENT Cancel Order #[NUMBER]"
+- Include reason (helps us improve)
+
+**Chat Method:**
+- Start chat on lucyd.co
+- Say "cancel order" immediately
+- Provide order number
+
+**What Happens If Too Late?**
+
+If we can't cancel in time:
+1. Order ships normally
+2. You can refuse delivery (returns automatically)
+3. Or accept and request return label
+4. Refund processed upon return
+
+**Partial Cancellation**
+
+To cancel part of multi-item order:
+- Contact us with which items to cancel
+- We'll adjust order if still possible
+- Partial refund for cancelled items
+
+---
+
+### Article 8.38: Lucyd Product Comparison Guide
+
+**Title:** Lucyd Product Comparison Guide
+**Category:** Product Information
+**Tags:** compare, models, difference
+
+---
+
+**Lucyd Eyewear Comparison**
+
+**Frame Styles Available**
+
+| Style | Best For | Look |
+|-------|----------|------|
+| Lyte | Everyday | Classic rectangular |
+| Dynamo | Active lifestyle | Sporty wrap |
+| Stargazer | Fashion-forward | Bold statement |
+| Meridian | Professional | Sophisticated round |
+| Earthbound | Casual | Relaxed design |
+
+**All Models Include**
+
+Every Lucyd frame features:
+- Bluetooth 5.0 audio
+- Dual speakers (one per temple)
+- Built-in microphone
+- Touch controls
+- IPX4 water resistance
+- 6-8 hour battery
+- Lucyd app compatibility
+
+**Size Options**
+
+| Size | Frame Width | Face Type |
+|------|-------------|-----------|
+| Small | 130-135mm | Narrow |
+| Medium | 136-142mm | Average |
+| Large | 143-150mm | Wide |
+
+Most adults fit Medium.
+
+**Lens Options (All Models)**
+
+- Non-Rx: Clear, Blue Light, Polarized, Photochromic
+- Rx: Same options + prescription lenses
+
+**How to Choose**
+
+1. **Consider your style** - Pick frame that matches your look
+2. **Measure your face** - Use sizing guide for best fit
+3. **Pick lens type** - Based on primary use
+4. **Add prescription** - If needed
+
+Need help deciding? Contact us with a photo and your needs!
+
+---
+
+### Article 8.39: What Devices Work with Lucyd?
+
+**Title:** Device Compatibility Guide
+**Category:** Product Information
+**Tags:** compatible, devices, phone, tablet
+
+---
+
+**Lucyd Compatibility**
+
+**Smartphones**
+
+| Platform | Requirement | Supported |
+|----------|-------------|-----------|
+| iPhone | iOS 13+ | 6s and newer |
+| Android | 8.0+ | Most from 2018+ |
+
+**Feature Support**
+
+| Feature | iPhone | Android |
+|---------|--------|---------|
+| Music | Yes | Yes |
+| Phone calls | Yes | Yes |
+| Podcasts | Yes | Yes |
+| Voice assistant | Siri | Google |
+| Lucyd app | Yes | Yes |
+| Firmware updates | Yes | Yes |
+
+**Other Devices**
+
+| Device | Compatible | Notes |
+|--------|------------|-------|
+| iPad | Yes | Same as iPhone |
+| Android tablet | Yes | If Bluetooth 5.0 |
+| Laptop (Mac) | Yes | Limited features |
+| Laptop (Windows) | Yes | Limited features |
+| Smart TV | Varies | If Bluetooth audio |
+| Gaming console | Limited | Check specific model |
+
+**Lucyd App Requirements**
+
+The companion app requires:
+- iPhone: iOS 13+
+- Android: 8.0+ with Bluetooth 5.0
+
+**Checking Your Phone**
+
+**iPhone:**
+Settings > General > About > Software Version
+
+**Android:**
+Settings > About Phone > Android Version
+
+**99% of phones from the last 5 years work perfectly!**
+
+Older or unusual device? Contact us to verify.
+
+---
+
+### Article 8.40: Vision Problems with New Prescription Glasses
+
+**Title:** Vision Problems with New Prescription Glasses
+**Category:** Prescriptions
+**Tags:** vision, blur, headache, adjustment
+
+---
+
+**Adjusting to New Prescription Lenses**
+
+**Normal Adjustment Period: 1-2 Weeks**
+
+New prescriptions require your eyes and brain to adapt.
+
+**Normal During Adjustment:**
+- Mild headaches (especially first few days)
+- Slight eye strain
+- Edges of vision seem off
+- Depth perception feels different
+- For progressives: finding the "sweet spots"
+
+**Tips for Adjustment**
+- Wear consistently (don't switch with old glasses)
+- Give it time (at least 1-2 weeks)
+- Start wearing at home before driving
+
+**When to Contact Us**
+
+These symptoms are NOT normal:
+- Severe headaches
+- Persistent double vision
+- Significant blur that doesn't improve
+- Dizziness or nausea
+- Can't function with daily tasks
+
+**After 2 Weeks - Still Not Right?**
+
+Possible causes:
+- PD measurement was incorrect
+- Rx values were entered wrong
+- Your prescription changed since ordering
+- Frame fit affecting lens positioning
+
+**We'll Make It Right**
+
+If the issue is our error:
+- Free lens remake
+- No additional charge
+
+Contact us with:
+- Order number
+- Description of vision issues
+- Current prescription (if different from what we have)
+
+---
+
 *End of Help Center Articles*
+*Total Articles: 72*
+*Version: 2.0 - Complete*
+*Last Updated: January 2026*
