@@ -1,0 +1,241 @@
+<!-- SECTION: FIND ARMOR FOR YOUR INDUSTRY — GemPages Custom HTML -->
+<style>
+.lucyd-armor__industries,
+.lucyd-armor__industries * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  font-style: normal !important;
+  border: none !important;
+}
+
+.lucyd-armor__industries {
+  background: #151515 !important;
+  padding: 80px 80px !important;
+  font-family: 'Figtree', sans-serif !important;
+  width: 100% !important;
+}
+
+.lucyd-armor__industries-inner {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.lucyd-armor__industries h2 {
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 42px !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  text-align: center !important;
+  margin: 0 0 12px 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+  background: none !important;
+}
+
+.lucyd-armor__industries-sub {
+  font-family: 'Figtree', sans-serif !important;
+  font-size: 17px !important;
+  color: #EBEBEB !important;
+  text-align: center !important;
+  margin: 0 0 48px 0 !important;
+  line-height: 1.6 !important;
+}
+
+.lucyd-armor__industries-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 20px !important;
+}
+
+.lucyd-armor__industry-card {
+  background: #1E1E1E !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.2s ease !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.lucyd-armor__industry-card:hover {
+  transform: translateY(-4px) !important;
+  text-decoration: none !important;
+}
+
+.lucyd-armor__industry-img {
+  width: 100% !important;
+  aspect-ratio: 3 / 4 !important;
+  object-fit: cover !important;
+  display: block !important;
+  background: #2A2A2A !important;
+}
+
+.lucyd-armor__industry-body {
+  padding: 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  flex: 1 !important;
+}
+
+.lucyd-armor__industry-card h3 {
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+  background: none !important;
+}
+
+.lucyd-armor__industry-card p {
+  font-family: 'Figtree', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: #EBEBEB !important;
+  flex: 1 !important;
+}
+
+.lucyd-armor__industry-cta {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #DBFF00 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin-top: 8px !important;
+  transition: gap 0.2s ease !important;
+}
+
+.lucyd-armor__industry-card:hover .lucyd-armor__industry-cta {
+  gap: 10px !important;
+  color: #DBFF00 !important;
+  text-decoration: none !important;
+}
+
+.lucyd-armor__industry-cta svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: #DBFF00 !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  .lucyd-armor__industries {
+    padding: 60px 40px !important;
+  }
+  .lucyd-armor__industries-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .lucyd-armor__industries {
+    padding: 60px 24px !important;
+  }
+  .lucyd-armor__industries h2 {
+    font-size: 28px !important;
+  }
+  .lucyd-armor__industries-sub {
+    font-size: 15px !important;
+    margin-bottom: 32px !important;
+  }
+  .lucyd-armor__industries-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+  .lucyd-armor__industry-img {
+    aspect-ratio: 4 / 3 !important;
+  }
+  .lucyd-armor__industry-body {
+    padding: 16px !important;
+  }
+  .lucyd-armor__industry-card h3 {
+    font-size: 15px !important;
+  }
+  .lucyd-armor__industry-card p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .lucyd-armor__industries-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .lucyd-armor__industry-img {
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+</style>
+
+<section class="lucyd-armor__industries">
+  <div class="lucyd-armor__industries-inner">
+    <h2>Find Armor for Your Industry</h2>
+    <p class="lucyd-armor__industries-sub">Purpose-built smart safety eyewear for every work environment. Explore the features that matter most for your profession.</p>
+    <div class="lucyd-armor__industries-grid">
+
+      <!-- Construction -->
+      <a class="lucyd-armor__industry-card" href="/pages/armor-construction">
+        <img class="lucyd-armor__industry-img" src="https://images.unsplash.com/photo-1688841747582-41097036109d?w=400&h=530&fit=crop&crop=faces&q=80" alt="Construction worker wearing safety gear">
+        <div class="lucyd-armor__industry-body">
+          <h3>Construction</h3>
+          <p>Impact protection, indoor-outdoor lenses, and hands-free crew communication on the job site.</p>
+          <span class="lucyd-armor__industry-cta">Learn More <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Warehouse -->
+      <a class="lucyd-armor__industry-card" href="/pages/armor-warehouse">
+        <img class="lucyd-armor__industry-img" src="https://images.unsplash.com/photo-1768796372882-8b67936af681?w=400&h=530&fit=crop&crop=faces&q=80" alt="Warehouse worker in safety equipment">
+        <div class="lucyd-armor__industry-body">
+          <h3>Warehouse</h3>
+          <p>Walkie-talkie team comms, open-ear awareness for forklifts, and all-day battery for long shifts.</p>
+          <span class="lucyd-armor__industry-cta">Learn More <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Healthcare -->
+      <a class="lucyd-armor__industry-card" href="/pages/armor-healthcare">
+        <img class="lucyd-armor__industry-img" src="https://images.unsplash.com/photo-1603735197827-5947626fe4dd?w=400&h=530&fit=crop&crop=faces&q=80" alt="Healthcare worker in lab setting">
+        <div class="lucyd-armor__industry-body">
+          <h3>Healthcare</h3>
+          <p>Anti-fog lenses for PPE, hands-free AI access, and Rx-compatible frames for clinical settings.</p>
+          <span class="lucyd-armor__industry-cta">Learn More <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Utility -->
+      <a class="lucyd-armor__industry-card" href="/pages/armor-utility">
+        <img class="lucyd-armor__industry-img" src="https://images.unsplash.com/photo-1595856619767-ab739fa7daae?w=400&h=530&fit=crop&crop=faces&q=80" alt="Utility worker in the field">
+        <div class="lucyd-armor__industry-body">
+          <h3>Utility</h3>
+          <p>8-hour battery for extended shifts, weather-resistant design, and navigation for field work.</p>
+          <span class="lucyd-armor__industry-cta">Learn More <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Industrial -->
+      <a class="lucyd-armor__industry-card" href="/pages/armor-industrial">
+        <img class="lucyd-armor__industry-img" src="https://images.unsplash.com/photo-1695977530441-97b9936172f9?w=400&h=530&fit=crop&crop=faces&q=80" alt="Industrial worker in manufacturing facility">
+        <div class="lucyd-armor__industry-body">
+          <h3>Industrial</h3>
+          <p>Glove-compatible controls, team ordering bundles, and triple-certified safety for the factory floor.</p>
+          <span class="lucyd-armor__industry-cta">Learn More <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>

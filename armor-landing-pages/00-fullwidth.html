@@ -1,0 +1,75 @@
+<!-- FULL WIDTH OVERRIDE - Paste as FIRST Custom HTML element -->
+<style>
+/* =============================================
+   FULL WIDTH OVERRIDE FOR GEMPAGES + SHOPIFY
+   Scoped to Armor landing pages
+   ============================================= */
+
+/* 1. Shopify theme page-width container */
+.page-width {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 2. Shopify section wrapper */
+#MainContent .shopify-section {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+/* 3. GemPages page wrapper - remove width/overflow constraints */
+[class*="gps-"].gps.gpsil,
+[class*="gps-"].gps {
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+/* 4. GemPages utility class containers */
+[class*="gps-"] .gp-container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+[class*="gps-"] .gp-mx-auto {
+  max-width: 100% !important;
+}
+
+/* 5. Force ALL nested wrapper divs in the GemPages structure to be full width */
+[class*="gps-"] > div,
+[class*="gps-"] > div > div,
+[class*="gps-"] > div > div > div,
+[class*="gps-"] > div > div > div > div,
+[class*="gps-"] > div > div > div > div > div,
+[class*="gps-"] > div > div > div > div > div > div,
+[class*="gps-"] > div > div > div > div > div > div > div,
+[class*="gps-"] > div > div > div > div > div > div > div > div {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: visible !important;
+}
+
+/* 6. Armor sections should be full width */
+.lucyd-armor__hero,
+.lucyd-armor__why,
+.lucyd-armor__features,
+.lucyd-armor__products,
+.lucyd-armor__faq,
+.lucyd-armor__final-cta {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: static !important;
+  left: auto !important;
+  transform: none !important;
+}
+</style>

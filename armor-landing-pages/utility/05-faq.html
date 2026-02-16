@@ -1,0 +1,241 @@
+<!-- SECTION 5: FAQ — UTILITY -->
+<style>
+.lucyd-armor__faq,
+.lucyd-armor__faq * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  font-style: normal !important;
+  border: none !important;
+}
+
+.lucyd-armor__faq {
+  background: #FFFFFF !important;
+  padding: 80px 80px !important;
+  font-family: 'Figtree', sans-serif !important;
+  width: 100% !important;
+}
+
+.lucyd-armor__faq-inner {
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 64px !important;
+  align-items: start !important;
+}
+
+.lucyd-armor__faq h2 {
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 42px !important;
+  text-transform: uppercase !important;
+  color: #151515 !important;
+  margin: 0 0 40px 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+  background: none !important;
+}
+
+.lucyd-armor__faq-list {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.lucyd-armor__faq-item {
+  border-bottom: 1px solid #EBEBEB !important;
+}
+
+.lucyd-armor__faq-question {
+  width: 100% !important;
+  background: none !important;
+  border: none !important;
+  padding: 20px 0 !important;
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #151515 !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+  line-height: 1.4 !important;
+  border-radius: 0 !important;
+}
+
+.lucyd-armor__faq-question:hover {
+  color: #333333 !important;
+}
+
+.lucyd-armor__faq-icon {
+  font-size: 24px !important;
+  font-weight: 300 !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.3s !important;
+  line-height: 1 !important;
+  color: #151515 !important;
+}
+
+.lucyd-armor__faq-answer {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height 0.3s ease, padding 0.3s ease !important;
+}
+
+.lucyd-armor__faq-answer-inner {
+  padding: 0 0 20px 0 !important;
+  font-family: 'Figtree', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #555555 !important;
+}
+
+.lucyd-armor__faq-item.active .lucyd-armor__faq-answer {
+  max-height: 400px !important;
+}
+
+.lucyd-armor__faq-item.active .lucyd-armor__faq-icon {
+  transform: rotate(45deg) !important;
+}
+
+.lucyd-armor__faq-right {
+  position: sticky !important;
+  top: 100px !important;
+}
+
+.lucyd-armor__faq-image {
+  width: 100% !important;
+  aspect-ratio: 4 / 5 !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .lucyd-armor__faq {
+    background: #151515 !important;
+    padding: 60px 24px !important;
+  }
+  .lucyd-armor__faq-inner {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .lucyd-armor__faq h2 {
+    font-size: 28px !important;
+    color: #FFFFFF !important;
+    margin-bottom: 24px !important;
+  }
+  .lucyd-armor__faq-question {
+    color: #FFFFFF !important;
+    font-size: 15px !important;
+  }
+  .lucyd-armor__faq-question:hover {
+    color: #EBEBEB !important;
+  }
+  .lucyd-armor__faq-icon {
+    color: #FFFFFF !important;
+  }
+  .lucyd-armor__faq-answer-inner {
+    color: #EBEBEB !important;
+  }
+  .lucyd-armor__faq-item {
+    border-color: #333333 !important;
+  }
+  .lucyd-armor__faq-right {
+    order: -1 !important;
+  }
+  .lucyd-armor__faq-image {
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+</style>
+
+<section class="lucyd-armor__faq">
+  <div class="lucyd-armor__faq-inner">
+    <div class="lucyd-armor__faq-left">
+      <h2>Frequently Asked Questions</h2>
+      <div class="lucyd-armor__faq-list">
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What safety certifications does Lucyd Armor have?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Lucyd Armor meets ANSI Z87.1-2020 (US), CSA Z94.3 (Canada), and EN ISO 16321-1 (EU) safety standards. The lenses are impact-resistant with anti-scratch and anti-fog coatings, and provide UV400 protection.</div>
+          </div>
+        </div>
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How long does the battery last?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Lucyd Armor delivers 8 hours of music playback and over 100 hours of standby time. The magnetic charging cable makes it easy to recharge at the end of each shift.</div>
+          </div>
+        </div>
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Can I get prescription lenses?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Yes. Lucyd Armor supports prescription lenses from SPH -3 to +8. Options include Single Vision Clear ($135), Single Vision Polarized ($159), Progressive Clear ($150), and Progressive Polarized ($225).</div>
+          </div>
+        </div>
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How do the glove-compatible controls work?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Lucyd Armor uses patent-pending touch controls on the temples that respond to gloved or wet hands. Tap, double-tap, and swipe gestures let you control calls, volume, and voice assistants without removing your gloves.</div>
+          </div>
+        </div>
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What's included in the box?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Every Lucyd Armor comes with a hard protective case, magnetic charging cable, and cleaning cloth. Everything you need to protect and maintain your smart safety glasses on the job.</div>
+          </div>
+        </div>
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Is there a warranty?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Yes. Lucyd Armor includes a 1-year manufacturer warranty covering defects in materials and workmanship. Visit our warranty page for full details and to submit a claim.</div>
+          </div>
+        </div>
+        <!-- Utility-specific FAQs -->
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Can the battery really last through a full utility shift?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">Yes. Lucyd Armor delivers 8 hours of continuous music playback and over 100 hours of standby time. For extended shifts or overtime, the magnetic charging cable lets you top up quickly during breaks — 15 minutes of charging provides meaningful additional runtime.</div>
+          </div>
+        </div>
+        <div class="lucyd-armor__faq-item">
+          <button class="lucyd-armor__faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How do they hold up in rain, sweat, and extreme weather?
+            <span class="lucyd-armor__faq-icon">+</span>
+          </button>
+          <div class="lucyd-armor__faq-answer">
+            <div class="lucyd-armor__faq-answer-inner">The TR090 Onyx frame is built for durability in demanding conditions. Adjustable silicone nose pads and no-slip flexible temples maintain a secure fit through sweat and weather changes. The anti-fog coating prevents lens clouding during temperature shifts between outdoor work and enclosed spaces.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lucyd-armor__faq-right">
+      <img class="lucyd-armor__faq-image" src="https://placehold.co/600x750/E8E8E8/888888?text=FAQ+IMAGE+-+Utility+Close-Up" alt="Lucyd Armor smart safety glasses for utility">
+    </div>
+  </div>
+</section>

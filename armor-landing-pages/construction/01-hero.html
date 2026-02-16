@@ -1,0 +1,253 @@
+<!-- SECTION 1: HERO — CONSTRUCTION -->
+<style>
+.lucyd-armor__hero,
+.lucyd-armor__hero * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  font-style: normal !important;
+  border: none !important;
+}
+
+.lucyd-armor__hero {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 700px !important;
+  background: url('https://placehold.co/1440x700/2A2A2A/666666?text=HERO+IMAGE+-+Construction+Worker') center center / cover no-repeat !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  font-family: 'Figtree', sans-serif !important;
+}
+
+.lucyd-armor__hero::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.9) 100%) !important;
+  z-index: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.lucyd-armor__hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 960px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 80px 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 24px !important;
+}
+
+.lucyd-armor__hero-badges {
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.lucyd-armor__hero-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(219, 255, 0, 0.15) !important;
+  border: 1px solid #DBFF00 !important;
+  padding: 8px 20px !important;
+  border-radius: 50px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  color: #DBFF00 !important;
+}
+
+.lucyd-armor__hero-badge svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: #DBFF00 !important;
+  flex-shrink: 0 !important;
+}
+
+.lucyd-armor__hero h1 {
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 52px !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+  color: #FFFFFF !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: 0 !important;
+  background: none !important;
+}
+
+.lucyd-armor__hero h1 span {
+  color: #DBFF00 !important;
+}
+
+.lucyd-armor__hero-sub {
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #EBEBEB !important;
+  max-width: 680px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.lucyd-armor__hero-bullets {
+  list-style: none !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 12px 24px !important;
+  margin: 8px 0 0 0 !important;
+  padding: 0 !important;
+}
+
+.lucyd-armor__hero-bullets li {
+  font-family: 'Figtree', sans-serif !important;
+  font-size: 15px !important;
+  color: #EBEBEB !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.lucyd-armor__hero-bullets li::before {
+  content: '✓' !important;
+  color: #DBFF00 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+
+.lucyd-armor__hero-ctas {
+  display: flex !important;
+  gap: 16px !important;
+  margin-top: 8px !important;
+}
+
+.lucyd-armor__hero-btn {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 16px 36px !important;
+  border: none !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: opacity 0.2s !important;
+  border-radius: 50px !important;
+  line-height: 1 !important;
+}
+
+.lucyd-armor__hero-btn--primary {
+  background: #DBFF00 !important;
+  color: #151515 !important;
+}
+
+.lucyd-armor__hero-btn--secondary {
+  background: transparent !important;
+  color: #FFFFFF !important;
+  border: 2px solid #FFFFFF !important;
+}
+
+.lucyd-armor__hero-btn:hover {
+  opacity: 0.85 !important;
+  text-decoration: none !important;
+}
+
+.lucyd-armor__hero-btn--primary:hover {
+  color: #151515 !important;
+}
+
+.lucyd-armor__hero-btn--secondary:hover {
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+  .lucyd-armor__hero {
+    min-height: auto !important;
+  }
+  .lucyd-armor__hero-inner {
+    padding: 60px 24px !important;
+    gap: 20px !important;
+  }
+  .lucyd-armor__hero h1 {
+    font-size: 30px !important;
+  }
+  .lucyd-armor__hero-sub {
+    font-size: 15px !important;
+    max-width: 100% !important;
+  }
+  .lucyd-armor__hero-bullets {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  .lucyd-armor__hero-bullets li {
+    font-size: 14px !important;
+  }
+  .lucyd-armor__hero-ctas {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+  .lucyd-armor__hero-btn {
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 14px 24px !important;
+  }
+  .lucyd-armor__hero-badges {
+    justify-content: center !important;
+  }
+}
+</style>
+
+<section class="lucyd-armor__hero">
+  <div class="lucyd-armor__hero-inner">
+    <div class="lucyd-armor__hero-badges">
+      <div class="lucyd-armor__hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        ANSI Z87.1-2020
+      </div>
+      <div class="lucyd-armor__hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        EN ISO 16321-1
+      </div>
+      <div class="lucyd-armor__hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        CSA Z94.3
+      </div>
+    </div>
+    <h1>Smart Safety Glasses Built for <span>Construction</span></h1>
+    <p class="lucyd-armor__hero-sub">ANSI Z87.1-2020 certified eye protection with Bluetooth 5.3, hands-free AI, and team walkie-talkie — engineered for the demands of the job site.</p>
+    <ul class="lucyd-armor__hero-bullets">
+      <li>Impact-resistant Z87.1+ lenses</li>
+      <li>Hands-free calls and AI on site</li>
+      <li>Glove-compatible touch controls</li>
+      <li>8-hour battery life</li>
+      <li>Photochromic indoor/outdoor lenses</li>
+    </ul>
+    <div class="lucyd-armor__hero-ctas">
+      <a href="/collections/lucyd-armor" class="lucyd-armor__hero-btn lucyd-armor__hero-btn--primary">Shop Armor for Construction</a>
+      <a href="#lucyd-armor-features" class="lucyd-armor__hero-btn lucyd-armor__hero-btn--secondary">View Safety Specs</a>
+    </div>
+  </div>
+</section>
