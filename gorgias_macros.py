@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
 Gorgias Macro Bulk Creator for Lucyd
-Creates 33 macros across 7 categories:
+Creates 34 macros across 8 categories:
 - Technical Support (7)
 - Prescription Services (5)
 - Product Questions (6)
-- Warranty & Replacements (5)
+- Warranty & Replacements (5 + 4 new broken frames macros)
 - Social Media (4)
-- Order Management (3)
+- Order Management (3 + 2 new: Cancellation Intake, Amazon Redirect)
 - Returns (3)
+- Sales (2 new: Discount Inquiry, Wholesale Intake)
 """
 
 import requests
@@ -769,6 +770,219 @@ Please DM us your order details so we can look into this right away and make it 
 
 We appreciate you bringing this to our attention and want to resolve it for you ASAP.""",
         "tags": ["social-question", "negative", "ESCALATE"]
+    },
+
+    # ==================== NEW BROKEN FRAMES MACROS (4) ====================
+    {
+        "name": "WARRANTY: Broken Frame Triage",
+        "body": """Hi {{ticket.customer.firstname}},
+
+I'm sorry to hear your Lucyd glasses are damaged! Let me help you figure out the best path forward.
+
+To assess your situation quickly, I need a few things:
+
+1. Your order number
+2. Approximately when did the damage happen?
+3. How did the damage occur? (normal use, drop, impact, etc.)
+4. 2-3 photos of the damage from different angles (see our photo guide: [Help Center Link])
+5. Do you have Lucyd Pro insurance?
+
+Once I have these details, I can determine your coverage and present your options.
+
+Here are some helpful resources while you gather that info:
+- My Frames Are Broken -- What Are My Options?: [Help Center Link]
+- How to Photograph Damage for a Warranty Claim: [Help Center Link]
+
+We'll take care of you!""",
+        "tags": ["WARRANTY", "broken-frame", "damage-assessment"]
+    },
+    {
+        "name": "WARRANTY: Damage Assessment - Defect",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Thank you for providing those details and photos. Based on our review, this appears to be a manufacturing defect covered under your 1-year warranty.
+
+What this means:
+- We'll send you a replacement pair at no charge
+- You'll receive a prepaid return label for the damaged pair
+- Replacement typically ships within 2-3 business days of approval
+
+Here's what happens next:
+1. Our warranty team will confirm the claim (1-2 business days)
+2. Once approved, your replacement ships
+3. Return the damaged pair using the label we provide (no rush -- 14 days is fine)
+
+If you have prescription lenses and they're undamaged, they may be transferable to the replacement frame. We'll confirm when we process your claim.
+
+We appreciate your patience, and we'll make this right!""",
+        "tags": ["WARRANTY", "broken-frame", "defect", "claim"]
+    },
+    {
+        "name": "WARRANTY: Damage Assessment - Accidental",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Thank you for the details and photos. Unfortunately, this type of damage (accidental/impact) is not covered under our standard 1-year warranty.
+
+However, you have several options:
+
+1. Discounted Replacement
+   - Special pricing for existing customers on a new pair
+   - Contact us for your personalized offer
+
+2. Paid Repair
+   - Depending on the damage, repair may be possible
+   - We'll provide a quote after reviewing your photos
+
+3. Upgrade Trade-In
+   - Trade your damaged pair toward new Lucyd glasses
+   - Ask about current trade-in promotions
+
+4. Lucyd Pro Insurance (for future protection)
+   - Covers accidental damage, drops, water damage
+   - Available at checkout on your next purchase
+
+If you have prescription lenses that are undamaged, they may be transferable to a replacement frame of the same model.
+
+Which option interests you? I'm happy to provide more details on any of these!""",
+        "tags": ["WARRANTY", "broken-frame", "accidental", "out-of-warranty"]
+    },
+    {
+        "name": "WARRANTY: Lucyd Pro Insurance Claim Start",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Great news -- since you have Lucyd Pro insurance, your accidental damage is covered!
+
+Here's how to proceed with your insurance claim:
+
+What I need from you:
+1. Confirmation of your order number (if not already provided)
+2. 2-3 photos of the damage
+3. Brief description of what happened
+4. Date of the incident
+
+What happens next:
+1. We review your claim (1-2 business days)
+2. If approved, we send a deductible payment link
+3. You pay the deductible (amount depends on your plan)
+4. Your replacement ships once payment is received
+5. Standard shipping times apply
+
+Important notes:
+- Most Lucyd Pro plans allow 2 claims during coverage
+- You typically do NOT need to return the damaged pair
+- Replacement will be the same model/color
+
+I'll get your claim started right away. Is there anything else you need?""",
+        "tags": ["WARRANTY", "broken-frame", "insurance", "lucyd-pro", "claim"]
+    },
+
+    # ==================== NEW ORDER MACROS (2) ====================
+    {
+        "name": "ORDER: Cancellation Request Intake",
+        "body": """Hi {{ticket.customer.firstname}},
+
+I've received your cancellation request and I'm treating this as urgent.
+
+To process this as quickly as possible, please confirm:
+1. Your order number
+2. Reason for cancellation (optional, helps us improve)
+
+Important timing:
+- Within ~2 hours of ordering: Best chance for full cancellation
+- After fulfillment starts: We may not be able to cancel
+
+If we can't catch it in time:
+- Your order will ship as normal
+- You can refuse delivery (auto-returns to us)
+- Or accept and request a return label for a full refund
+
+I'm escalating this to our fulfillment team RIGHT NOW. We'll update you as soon as we have confirmation.
+
+Please note: Prescription lens orders that have already entered production cannot be cancelled, as lenses are custom-made to your Rx.""",
+        "tags": ["ORDER", "cancel", "urgent"]
+    },
+    {
+        "name": "ORDER: Amazon Order Redirect",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Thanks for reaching out! I see your order was placed through Amazon.
+
+For order-related issues (shipping, returns, refunds), Amazon handles these directly:
+- Track your order: Amazon.com > Your Orders
+- Request a return: Amazon.com > Your Orders > Return or Replace
+- Contact Amazon: amazon.com/contact-us
+
+We can help with product-related issues:
+- Bluetooth pairing and connectivity
+- Audio or charging problems
+- Firmware updates
+- Technical troubleshooting
+- Warranty claims (with Amazon order proof)
+
+If you need technical help, just let me know:
+- Your Amazon order number
+- Description of the issue
+- Any troubleshooting you've already tried
+
+I'm happy to assist with any product questions!""",
+        "tags": ["ORDER", "amazon", "redirect"]
+    },
+
+    # ==================== NEW SALES MACROS (2) ====================
+    {
+        "name": "SALES: Discount Inquiry Response",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Thanks for your interest in Lucyd! I'd be happy to help with discount information.
+
+Current ways to save:
+- Check lucyd.co for any active promotions or sales
+- Sign up for our email newsletter for subscriber-exclusive offers
+- Follow us on social media for flash sales and announcements
+
+If you have a specific discount code:
+1. Add items to your cart at lucyd.co
+2. Look for the "Discount Code" field at checkout
+3. Enter the code exactly as written (case-sensitive)
+4. Click "Apply" to see the discount reflected
+
+Code not working? Common fixes:
+- Check expiration date
+- Most codes are single-use
+- Only one code per order
+- Some exclusions may apply (sale items, bundles)
+
+Please note: Our support team is unable to create or promise custom discount codes. All promotions are managed through our marketing team.
+
+Is there anything else I can help you with?""",
+        "tags": ["SALES", "discount", "pricing"]
+    },
+    {
+        "name": "SALES: Wholesale Intake Form",
+        "body": """Hi {{ticket.customer.firstname}},
+
+Thank you for your interest in Lucyd for wholesale/bulk purchasing! We'd love to explore this opportunity.
+
+To get you connected with the right team, please provide:
+
+1. Business name and website
+2. Type of business (retail store, corporate gifting, wellness program, etc.)
+3. Estimated order quantity
+4. Desired products (specific models/sizes, or general interest)
+5. Your contact name, email, and phone number
+6. Any specific requirements or timeline
+
+What we offer wholesale partners:
+- Volume pricing discounts
+- Marketing materials and displays
+- Product training for your staff
+- Dedicated account manager
+- Custom packaging (for large orders)
+
+I'll forward your details to our sales team. They typically respond to wholesale inquiries within 2-3 business days.
+
+Looking forward to working together!""",
+        "tags": ["SALES", "wholesale", "partnership", "B2B"]
     },
 ]
 

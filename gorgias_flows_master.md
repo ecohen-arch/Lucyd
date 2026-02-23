@@ -5,10 +5,10 @@
 This document contains all automated flows for Lucyd customer support across Chat, Help Center, and Contact Form channels.
 
 **Total Implementation:**
-- 6 Flows
-- 32 Help Center Articles
-- 26 Macros (already created)
-- 7 Auto-routing Rules (already enabled)
+- 7 Flows (6 original + Broken Frames Triage)
+- 82 Help Center Articles (72 original + 10 new broken frames & gap articles)
+- 34 Macros (26 original + 8 new)
+- 10 Auto-routing Rules (7 original + 3 new)
 
 ---
 
@@ -18,6 +18,7 @@ This document contains all automated flows for Lucyd customer support across Cha
 
 | # | Flow | Channel | Purpose | Expected Deflection |
 |---|------|---------|---------|---------------------|
+| 0 | **Broken Frames Triage** | **Chat** | **Damage assessment + warranty routing** | **30% (triage completeness)** |
 | 1 | Order Tracking | Chat | Self-service order lookup | 40-50% |
 | 2 | Technical Support | Chat | Troubleshooting guides | 30-40% |
 | 3 | Prescription Help | Chat | Rx submission & support | 25-35% |
@@ -29,6 +30,7 @@ This document contains all automated flows for Lucyd customer support across Cha
 
 | Topic | Team | Tags |
 |-------|------|------|
+| **Broken Frames / Physical Damage** | **Warranty & Returns** | **WARRANTY, broken-frame** |
 | Orders & Shipping | Order Support | ORDER-STATUS |
 | Technical Issues | Order Support | TECH-SUPPORT |
 | Prescriptions | Prescription Services | PRESCRIPTION |
@@ -36,6 +38,158 @@ This document contains all automated flows for Lucyd customer support across Cha
 | Warranty Claims | Warranty & Returns | WARRANTY |
 | Product Questions | Sales & Product | SALES |
 | Social Media | Social & Chat | social-lead |
+
+---
+
+## Flow 0: Broken Frames Triage (**CRITICAL -- #1 Ticket Driver, 25% of Volume**)
+
+### Trigger
+- Keywords: broke, broken, snapped, cracked, hinge, temple broke, frame split, glasses broke, arm fell off
+- Button: "🔨 My Frames Are Broken/Damaged" (Position #1 in widget)
+
+### Flow Diagram
+```
+[Customer reports broken/damaged frames]
+              │
+              ▼
+[Collect Order # + Purchase Date]
+              │
+              ▼
+[Ask: How did the damage happen?]
+     │                    │
+     ▼                    ▼
+Normal Use /          Drop / Impact /
+Don't Know            Accident / Sat On
+     │                    │
+     ▼                    ▼
+[Request 2-3 photos]  [Request 2-3 photos]
+     │                    │
+     ▼                    ▼
+[Check purchase date]  [Ask: Do you have
+     │                  Lucyd Pro insurance?]
+     │                    │
+  ┌──┴──┐             ┌──┴──┐
+  │     │             │     │
+<12mo  >12mo        Yes    No
+  │     │             │     │
+  ▼     ▼             ▼     ▼
+Warranty  Out-of-   Insurance  Present
+Eligible  Warranty  Claim     Options:
+Path      Path      Path      - Discount replacement
+  │         │         │       - Paid repair
+  │         │         │       - Upgrade trade-in
+  │         │         │         │
+  ▼         ▼         ▼         ▼
+[ALL PATHS: Create enriched ticket for Warranty team]
+[Include: order#, photos, damage description, coverage determination]
+```
+
+### Key Messages
+
+**Initial Greeting:**
+```
+I'm sorry to hear your Lucyd glasses are damaged! Let me help you figure out the best path forward.
+
+To get started, I need a few details:
+1. What's your order number?
+2. Approximately when did you purchase them?
+```
+
+**Damage Cause Assessment:**
+```
+Thanks! Now, can you tell me how the damage happened?
+
+[Quick Reply Buttons]
+├── 🔧 Broke during normal use (wearing, adjusting, opening/closing)
+├── 💥 Dropped or impact damage
+├── 🪑 Sat on / stepped on / crushed
+└── ❓ Not sure / Other
+```
+
+**Photo Request:**
+```
+To assess the damage properly, please send us 2-3 photos:
+
+1. Overall view showing the full frame
+2. Close-up of the damaged area
+3. Detail of the break point (if visible)
+
+Tips: Good lighting, plain background, make sure damage is in focus.
+
+You can attach photos here or email them to info@lucyd.co with your order number.
+```
+
+**Warranty Eligible Path (<12 months, normal use):**
+```
+Based on what you've described, this looks like it may be covered under your 1-year warranty! ✅
+
+Here's what happens next:
+1. Our Warranty team will review your photos and details
+2. If approved as a manufacturing defect, we'll send a replacement
+3. You'll return the damaged pair with a prepaid label
+
+I'm creating a priority ticket for our Warranty team now. They'll follow up within 1 business day.
+
+Is there anything else I can help with?
+```
+
+**Out-of-Warranty Path (>12 months OR accidental damage):**
+```
+I understand the frustration. While this isn't covered under the standard warranty, you still have some good options:
+
+{{#if has_lucyd_pro}}
+Great news -- you have Lucyd Pro insurance! You can file an insurance claim:
+- Small deductible applies
+- We'll send a replacement after claim approval
+{{else}}
+Here are your options:
+1. 💰 Discounted Replacement - Special pricing for existing customers
+2. 🔧 Paid Repair - Some damage can be fixed (we'll quote after review)
+3. ⬆️ Upgrade Trade-In - Credit toward new Lucyd glasses
+{{/if}}
+
+I'm creating a ticket with all your details so our team can provide a personalized quote. They'll follow up within 1 business day.
+
+Would you like to explore any of these options?
+```
+
+**Lucyd Pro Insurance Path:**
+```
+Since you have Lucyd Pro insurance, you're covered for accidental damage! 🎉
+
+Here's the claim process:
+1. We review your photos and damage description (1-2 days)
+2. If approved, we'll send a deductible payment link
+3. Pay the deductible and your replacement ships
+
+I'm creating a priority insurance claim ticket now. Our team will reach out within 1 business day with next steps.
+```
+
+### Escalation Triggers
+- Customer disputes damage classification → Route to senior agent
+- Repeat warranty claim (2nd+) → Flag for manager review
+- Customer is angry/threatening → Trigger Rule 4 (Urgent Escalation) override
+- Safety concern (sharp edges, broken lens near eyes) → Immediate escalation, priority URGENT
+- Customer mentions legal action → Trigger Rule 4 override
+
+### Resolution Criteria
+- Customer informed of coverage determination
+- Photos and order details collected
+- Enriched ticket created for Warranty team with all context
+- Customer given timeline for follow-up (1 business day)
+
+### Tags Applied
+- All paths: `WARRANTY`, `broken-frame`, `damage-assessment`
+- Warranty eligible: + `defect`
+- Accidental: + `accidental`
+- Insurance claim: + `insurance`, `lucyd-pro`
+- Escalated: + `escalated`
+
+### Metrics
+- Triage completion rate target: 85%+ (customer provides all info)
+- Escalation rate: <15%
+- Average triage time: <5 minutes
+- Customer satisfaction with triage: 4.0+
 
 ---
 
@@ -547,17 +701,24 @@ Resolved OR ──────────────────────�
 3. Start an Exchange
 4. Refund Timeline
 
-#### 🛡️ Warranty (3)
-1. Warranty Coverage
-2. File Warranty Claim
-3. Out of Warranty Options
+#### 🛡️ Warranty (3 + 5 new broken frames articles)
+1. Warranty Coverage (updated)
+2. File Warranty Claim (updated)
+3. Out of Warranty Options (updated)
+4. **My Frames Are Broken -- What Are My Options? (NEW)**
+5. **How to Photograph Damage for a Warranty Claim (NEW)**
+6. **Warranty vs Accidental Damage: What's Covered? (NEW)**
+7. **Frame Damage Assessment Guide (NEW - internal)**
+8. **Broken Frames FAQ: Hinges, Temples, Nose Bridge (NEW)**
 
-#### 🛒 Product Info (5)
+#### 🛒 Product Info (5 + 2 new)
 1. FSA/HSA Eligibility
 2. Sizing Guide
 3. Phone Compatibility
 4. Battery & Charging
 5. Water Resistance
+6. **Current Promotions & How to Apply Discount Codes (NEW)**
+7. **Wholesale & Partnership Inquiries (NEW)**
 
 ### Article Features
 - Reading time indicator
@@ -570,12 +731,19 @@ Resolved OR ──────────────────────�
 
 ## Implementation Checklist
 
-### Phase 1: Foundation ✅
+### Phase 1: Foundation ✅ + Critical Gap Fix
 - [x] Create 26 macros
 - [x] Enable 7 auto-routing rules
 - [ ] Set up Help Center articles
+- [ ] **Create 5 critical broken frames KB articles**
+- [ ] **Create 4 broken frame macros**
+- [ ] **Add Broken Frame Detector rule**
+- [ ] **Update chat widget (broken frames as button #1)**
+- [ ] **Create 8 new macros (total: 34)**
+- [ ] **Add 3 new rules (total: 10)**
 
 ### Phase 2: Chat Flows
+- [ ] **Broken Frames Triage flow (PRIORITY #1)**
 - [ ] Order Tracking flow
 - [ ] Technical Support flow
 - [ ] Prescription Help flow
@@ -584,12 +752,14 @@ Resolved OR ──────────────────────�
 ### Phase 3: Forms & Help Center
 - [ ] Contact Form Pre-Qualification
 - [ ] Help Center article organization
+- [ ] Add 5 P1 gap articles (discount, Amazon, wholesale, insurance, preventive)
 - [ ] Search configuration
 - [ ] Feedback collection
 
 ### Phase 4: Testing & Optimization
-- [ ] Test all flow branches
-- [ ] Verify auto-routing
+- [ ] Test all flow branches (including broken frames triage)
+- [ ] Verify auto-routing (including new rules 9-11)
+- [ ] Run 50-question test set (13 broken frames questions)
 - [ ] Monitor deflection rates
 - [ ] Gather feedback and iterate
 
@@ -648,5 +818,5 @@ Resolved OR ──────────────────────�
 ---
 
 *Document created: January 2026*
-*Last updated: January 2026*
-*Version: 1.0*
+*Last updated: February 2026*
+*Version: 2.0 - Added Broken Frames Triage flow, updated article counts, added new macros/rules references*

@@ -887,15 +887,24 @@ However:
 
 **Damaged/Defective Items**
 
-✅ Full replacement at any time
+✅ Manufacturing defects: Full replacement under warranty
 ✅ Covered under 1-year warranty
 ✅ No return needed (we send new pair first)
+
+**Damaged in Transit vs. Customer-Damaged**
+
+| Situation | Process |
+|-----------|---------|
+| Arrived damaged from shipping | Full replacement, no return needed |
+| Frame broke from a drop/accident | Not covered by warranty (see Out of Warranty Options or Lucyd Pro insurance) |
+| Manufacturing defect after use | Warranty replacement |
 
 **Not Eligible**
 
 ❌ Items worn/used (beyond trying on)
 ❌ Missing tags or packaging
 ❌ After 30 days (unless defective)
+❌ Accidental damage (see warranty/insurance options instead)
 
 ---
 
@@ -1026,15 +1035,32 @@ If 14+ days since return delivered, contact us with return tracking and we'll in
 - Touch control failure
 - Manufacturing defects
 - Hinge/frame defects (not from drops)
+- Frame stress cracks from normal use
+- Joint separation during normal handling
+- Screw holes that strip or fail
 
 **❌ NOT COVERED**
 
-- Physical damage (drops, impacts)
+- Physical damage (drops, impacts, sitting on glasses)
 - Water damage (beyond IPX4 rating)
 - Lost or stolen items
 - Normal wear and tear
 - Unauthorized modifications
 - Damage from misuse
+- Accidental frame breakage (drops, bending, crushing)
+- Heat damage (left in hot car, near heat source)
+
+**Frame Damage Classification**
+
+| Damage Type | Covered? | Example |
+|-------------|----------|---------|
+| Hinge breaks during normal use | ✅ Yes | Opening/closing as intended |
+| Frame cracks at stress point | ✅ Yes | No impact, normal wear |
+| Temple snaps from a drop | ❌ No | External force applied |
+| Sat on glasses | ❌ No | Accidental damage |
+| Nose bridge cracks, no impact | ✅ Yes | Material/manufacturing flaw |
+
+See our "Warranty vs Accidental Damage: What's Covered?" article for full details and photo examples.
 
 **Warranty Period**
 
@@ -1067,13 +1093,19 @@ Order number, receipt, or proof of purchase
 - [ ] When the problem started
 - [ ] Photos/video (if applicable)
 
-**Before Filing - Try These Fixes**
+**For Broken Frame Claims Specifically:**
+
+- [ ] 2-3 photos from different angles (see "How to Photograph Damage for a Warranty Claim")
+- [ ] Description of how the damage happened (normal use vs. drop/impact)
+- [ ] Whether you have Lucyd Pro insurance
+
+**Before Filing Electronic/Software Issues - Try These Fixes**
 
 1. Factory reset (hold BOTH buttons 10 sec)
 2. Full charge (1.5 hours)
 3. Re-pair with phone
 
-These fix 70% of issues!
+These fix 70% of electronic issues!
 
 **How to File**
 
@@ -1130,12 +1162,16 @@ Ask about trade-in programs when upgrading to new Lucyd glasses.
 
 **Physical Damage (In or Out of Warranty)**
 
-Physical damage isn't covered, but:
-- We offer repair services
-- Discounted replacement frames
-- Rx lenses may transfer to new frame
+Physical damage isn't covered by standard warranty, but you have options:
+- **Lucyd Pro Insurance**: If you purchased Lucyd Pro, file an insurance claim (deductible applies)
+- **Discounted replacement frames**: Loyal customer pricing available
+- **Paid repair**: Some frame damage can be repaired for a fee
+- **Rx lens transfer**: Your prescription lenses may transfer to a new frame of the same model
+- **Upgrade trade-in**: Ask about trade-in programs when upgrading
 
-Contact us for options!
+For broken frames specifically, see our "My Frames Are Broken -- What Are My Options?" article for a complete guide.
+
+Contact us with photos of the damage and your order number for a personalized quote!
 
 ---
 
@@ -3317,7 +3353,628 @@ Contact us with:
 
 ---
 
+---
+
+## Category 9: 🔧 Broken Frames & Physical Damage (NEW - Critical Gap)
+
+### Article 9.1: My Frames Are Broken -- What Are My Options?
+
+**Title:** My Frames Are Broken -- What Are My Options?
+**Category:** Warranty & Protection
+**Tags:** broken, frames, damage, warranty, options, cracked, snapped
+
+---
+
+**We're sorry your Lucyd frames are damaged! Here are your options.**
+
+The path forward depends on two factors: **when you bought them** and **how the damage happened**.
+
+**Step 1: Determine Your Coverage**
+
+| Situation | Coverage |
+|-----------|----------|
+| Within 1 year + Manufacturing defect | ✅ Full warranty replacement |
+| Within 1 year + Accidental damage | ❌ Not covered by warranty (see options below) |
+| Within 2 years + Lucyd Pro Insurance | ✅ Insurance claim (deductible applies) |
+| Over 1 year + No insurance | ❌ Out of warranty (see options below) |
+
+**If It's a Manufacturing Defect (Warranty)**
+
+Signs of a manufacturing defect:
+- Hinge broke during normal use (no drop/impact)
+- Frame cracked at a stress point without impact
+- Temple snapped while putting on/removing glasses
+- Joint separated with normal handling
+
+What to do:
+1. Contact us with your order number
+2. Send 2-3 photos from different angles
+3. Describe how/when the damage happened
+4. We'll review and process a warranty replacement
+
+**If It's Accidental Damage**
+
+Drops, impacts, sitting on glasses, and similar accidents are not covered by the standard warranty. Your options:
+
+**Option A: Lucyd Pro Insurance Claim**
+- If you purchased Lucyd Pro, file an insurance claim
+- Small deductible applies
+- Full replacement provided
+
+**Option B: Discounted Replacement**
+- Loyal customers get special pricing on replacement frames
+- Contact us for current offers
+
+**Option C: Paid Repair**
+- Some damage can be repaired for a fee
+- Send photos and we'll quote a repair price
+
+**Option D: Upgrade Trade-In**
+- Trade your damaged pair toward new Lucyd glasses
+- Ask about current trade-in programs
+
+**What About My Prescription Lenses?**
+
+If your lenses are undamaged, they may be transferable to a replacement frame of the same model. Ask us when you contact support.
+
+**Ready to Get Help?**
+
+Contact us with:
+1. Your order number
+2. 2-3 photos of the damage
+3. Description of how it happened
+4. Whether you have Lucyd Pro insurance
+
+We'll get back to you within 1 business day with your best options!
+
+---
+
+### Article 9.2: How to Photograph Damage for a Warranty Claim
+
+**Title:** How to Photograph Damage for a Warranty Claim
+**Category:** Warranty & Protection
+**Tags:** photos, damage, warranty, claim, evidence
+
+---
+
+**Good photos help us process your claim faster!**
+
+Sending clear photos of the damage reduces back-and-forth and helps us resolve your claim quickly.
+
+**What We Need: 2-3 Photos**
+
+**Photo 1: Overall View**
+- Hold glasses at arm's length
+- Show the full frame with damage visible
+- Good lighting, no shadows on the damage
+
+**Photo 2: Close-Up of Damage**
+- Get as close as possible to the broken area
+- Make sure the damage is in focus
+- Show the break point clearly
+
+**Photo 3: Detail Shot (if applicable)**
+- If both sides of a break are visible, show how they separated
+- If hinge damage, show the hinge area close-up
+- If multiple damage points, photograph each one
+
+**Photo Tips**
+
+**DO:**
+- Use good, natural lighting
+- Hold the camera steady (rest on a table if needed)
+- Take photos on a plain, contrasting background
+- Make sure the damage area is in sharp focus
+- Include something for scale if helpful (coin, finger)
+
+**DON'T:**
+- Use flash directly on the damage (causes glare)
+- Take photos in dim lighting
+- Send blurry or out-of-focus images
+- Photograph from far away only
+
+**Common Damage Types & Best Angles**
+
+| Damage Type | Best Photo Angle |
+|-------------|------------------|
+| Broken hinge | Side view showing hinge separation |
+| Cracked frame | Front view + close-up of crack |
+| Snapped temple | Show both pieces and break point |
+| Nose bridge crack | Top-down view + front view |
+| Joint separation | Side view showing gap |
+
+**How to Send Photos**
+
+- Reply to your support ticket with photos attached
+- Or email to info@lucyd.co with your order number
+- Accepted formats: JPG, PNG (under 10MB each)
+
+---
+
+### Article 9.3: Warranty vs Accidental Damage: What's Covered?
+
+**Title:** Warranty vs Accidental Damage: What's Covered?
+**Category:** Warranty & Protection
+**Tags:** warranty, accidental, coverage, damage, defect
+
+---
+
+**Understanding what's covered helps set expectations and speeds up your claim.**
+
+**Manufacturing Defect (WARRANTY COVERED)**
+
+A manufacturing defect means the product failed due to a flaw in materials or workmanship, NOT from external force.
+
+**Examples of covered defects:**
+- Hinge breaks during normal open/close action
+- Frame cracks at a stress point without any impact
+- Temple snaps while being worn or adjusted normally
+- Nose bridge separates without being bent or dropped
+- Screws fall out repeatedly despite being tightened
+- Frame warps or bends permanently from normal body heat
+
+**Key indicator:** The damage happened during normal, everyday use with no external force or accident.
+
+**Accidental Damage (NOT WARRANTY COVERED)**
+
+Accidental damage results from external force, misuse, or events beyond normal wear.
+
+**Examples of accidental damage:**
+- Dropped glasses and frame cracked
+- Sat on glasses
+- Stepped on glasses
+- Glasses fell off head onto hard surface
+- Pet chewed on frames
+- Stored in back pocket and broke
+- Bent frames trying to adjust fit
+- Damage from extreme heat (left in hot car)
+
+**How We Determine the Cause**
+
+We look at:
+1. **Break pattern** - Clean snaps at stress points suggest defects; irregular breaks suggest impact
+2. **Location** - Known weak points vs unusual locations
+3. **Timeline** - Defects typically appear within months; impact damage is immediate
+4. **Photos** - Visual evidence of the damage type
+
+**What If I Disagree?**
+
+If you believe your damage is a manufacturing defect and we've classified it as accidental:
+- You can request a second review
+- Provide additional context or photos
+- Our team will re-evaluate
+
+**Coverage Summary**
+
+| Covered (Warranty) | Not Covered (Accidental) |
+|--------------------|--------------------------|
+| Hinge failure | Drops and impacts |
+| Stress cracks | Sitting/stepping on |
+| Joint separation | Bending/forcing |
+| Screw failure | Pet damage |
+| Material fatigue | Heat damage |
+| Normal use breakage | Water submersion damage |
+
+**Have Lucyd Pro Insurance?**
+
+Lucyd Pro covers BOTH manufacturing defects AND accidental damage. If you purchased Lucyd Pro, you're covered either way!
+
+---
+
+### Article 9.4: Frame Damage Assessment Guide (Internal Reference)
+
+**Title:** Frame Damage Assessment Guide
+**Category:** Warranty & Protection
+**Tags:** internal, assessment, damage, warranty, guide
+
+---
+
+**This guide helps you understand how we assess frame damage claims.**
+
+**Common Frame Failure Points**
+
+| Location | Common Cause | Usually Defect? |
+|----------|-------------|-----------------|
+| Hinge joint | Repeated open/close | Yes, if <12 months |
+| Temple mid-point | Flexing/bending | Depends on force |
+| Nose bridge | Stress from wear | Yes, if no impact |
+| Frame front corners | Impact point | Usually accidental |
+| Screw holes | Material fatigue | Yes |
+
+**Frame Materials & Expected Durability**
+
+Lucyd frames are designed for everyday use including:
+- Daily wearing and removing
+- Normal adjustment for fit
+- Cleaning and handling
+- Carrying in a pouch or case
+
+**When to Suspect a Defect**
+
+- Damage appears within the first 6 months
+- Break occurs at a known stress point (hinge, joint)
+- Customer describes normal use when damage occurred
+- Similar reports from same batch/model
+- Clean break pattern consistent with material failure
+
+**When to Suspect Accidental Damage**
+
+- Impact marks visible near break point
+- Customer mentions a drop, sit-on, or similar event
+- Break pattern shows external force (splintering, crushing)
+- Damage at unusual location (not a stress point)
+- Cosmetic scratches/scuffs suggesting rough handling
+
+**Assessment Process**
+
+1. Request photos (see photo guide article)
+2. Check purchase date and order history
+3. Review customer's description of events
+4. Examine break pattern in photos
+5. Check for known issues with that model/batch
+6. Make determination and communicate clearly
+
+---
+
+### Article 9.5: Broken Frames FAQ: Hinges, Temples, Nose Bridge
+
+**Title:** Broken Frames FAQ: Hinges, Temples, Nose Bridge
+**Category:** Warranty & Protection
+**Tags:** broken, hinge, temple, nose bridge, FAQ
+
+---
+
+**Common questions about specific types of frame damage.**
+
+**Hinge Issues**
+
+**Q: My hinge is loose. What should I do?**
+A: A loose hinge can sometimes be tightened. Try using a small eyeglass screwdriver on the hinge screw. If the screw won't hold or keeps loosening, contact us -- this may be a warranty issue.
+
+**Q: The hinge broke completely. Is this covered?**
+A: If the hinge broke during normal use (opening/closing your glasses), this is typically a manufacturing defect covered under warranty. Send us photos and your order number.
+
+**Q: Can a broken hinge be repaired?**
+A: In some cases, yes. Send photos and we'll assess whether repair is possible or if a full replacement is needed.
+
+**Temple (Arm) Issues**
+
+**Q: One temple snapped off. Now what?**
+A: This depends on how it happened:
+- Broke during normal wear → Likely warranty covered
+- Broke from a drop or impact → Accidental damage (see options in "My Frames Are Broken" article)
+
+**Q: Can I get just one replacement temple?**
+A: Due to the electronics in each temple, individual temple replacement isn't available. We replace the full pair.
+
+**Q: The temple is bent. Can I straighten it?**
+A: Light bending for fit adjustment is okay. If the temple is significantly bent from an impact, don't force it -- this can cause further damage. Contact us for options.
+
+**Nose Bridge Issues**
+
+**Q: The nose bridge cracked. What are my options?**
+A: Nose bridge cracks during normal wear are typically covered under warranty. Contact us with photos and your order number.
+
+**Q: The nose pads fell off. Can I replace them?**
+A: Yes! Replacement nose pads are available at lucyd.co/accessories. These are easy to replace yourself.
+
+**Q: The frame is too tight/loose on my nose.**
+A: Minor fit adjustments are normal. If the frame doesn't fit well, consider exchanging for a different size (free within 30 days).
+
+**General Frame Questions**
+
+**Q: How long should Lucyd frames last?**
+A: With proper care, Lucyd frames should last 2+ years. The 1-year warranty covers manufacturing defects. Lucyd Pro insurance extends protection to 2 years including accidental damage.
+
+**Q: Do you sell just frames without electronics?**
+A: No, Lucyd frames include integrated electronics. Replacement requires a full new pair.
+
+**Q: Can my prescription lenses be moved to a new frame?**
+A: Often yes, if the replacement is the same model and your lenses are undamaged. Ask us when filing your claim.
+
+---
+
+### Article 9.6: Current Promotions & How to Apply Discount Codes
+
+**Title:** Current Promotions & How to Apply Discount Codes
+**Category:** Product Info
+**Tags:** discount, promo, coupon, code, sale
+
+---
+
+**Find current deals and learn how to apply discount codes at checkout.**
+
+**How to Apply a Discount Code**
+
+1. Add items to your cart at lucyd.co
+2. Proceed to checkout
+3. Look for "Discount Code" or "Promo Code" field
+4. Enter your code exactly as provided (case-sensitive)
+5. Click "Apply"
+6. Discount appears in order total
+
+**Discount Code Not Working?**
+
+Common issues:
+- **Expired code** - Check the expiration date
+- **Already used** - Most codes are one-time use
+- **Wrong case** - Enter exactly as written
+- **Minimum not met** - Some codes require minimum purchase
+- **Exclusions** - Some items may be excluded (sale items, bundles)
+- **Stacking** - Only one code per order unless stated otherwise
+
+**Where to Find Discount Codes**
+
+- Email newsletter (sign up at lucyd.co)
+- Social media (follow @lucabordigon on Instagram)
+- Seasonal sales and holiday promotions
+- First-time buyer offers
+
+**Current Offers**
+
+Visit lucyd.co for the latest promotions. Offers change regularly and may include:
+- Seasonal sales
+- Bundle deals
+- First-time buyer discounts
+- Newsletter subscriber specials
+
+**Important Notes**
+
+- Discount codes cannot be applied retroactively to placed orders
+- Codes cannot be combined unless specifically stated
+- Sale prices and discount codes typically cannot be stacked
+- We cannot create custom discount codes upon request
+
+**Questions?**
+
+Contact us if you're having trouble applying a valid code at checkout. We're happy to help!
+
+---
+
+### Article 9.7: Amazon Orders: How to Get Support
+
+**Title:** Amazon Orders: How to Get Support
+**Category:** Orders & Shipping
+**Tags:** amazon, order, support, third-party
+
+---
+
+**Purchased Lucyd glasses on Amazon? Here's how to get help.**
+
+**For Order Issues (Shipping, Returns, Refunds)**
+
+Amazon orders are fulfilled and managed by Amazon. For these issues, contact Amazon directly:
+
+- **Track your order**: Amazon.com → Your Orders
+- **Return request**: Amazon.com → Your Orders → Return or Replace
+- **Refund status**: Amazon.com → Your Orders → View Return/Refund Status
+- **Missing/wrong item**: Contact Amazon Customer Service
+
+**Amazon Customer Service:**
+- amazon.com/contact-us
+- Or use the Amazon app → Account → Customer Service
+
+**For Product Issues (Technical Support, Warranty)**
+
+We can help with product-related issues:
+
+- Bluetooth pairing problems
+- Audio/charging issues
+- Firmware updates
+- Technical troubleshooting
+- Warranty claims (with Amazon order proof)
+
+**Contact us** with:
+- Amazon order number (starts with 113- or similar)
+- Description of the issue
+- Photos if applicable
+
+**Warranty on Amazon Purchases**
+
+The same 1-year warranty applies to Amazon purchases. To file a warranty claim:
+1. Provide your Amazon order number
+2. Show proof of purchase (Amazon order confirmation)
+3. Follow standard warranty claim process
+
+**Important Notes**
+
+- We cannot process Amazon returns/refunds -- only Amazon can
+- Amazon's return policy may differ from ours
+- Prescription lenses are NOT available through Amazon
+- Lucyd Pro insurance is NOT available for Amazon purchases
+
+---
+
+### Article 9.8: Wholesale & Partnership Inquiry Form
+
+**Title:** Wholesale & Partnership Inquiries
+**Category:** Product Info
+**Tags:** wholesale, bulk, partnership, business, B2B
+
+---
+
+**Interested in Lucyd for your business, retail store, or organization?**
+
+**Wholesale Purchasing**
+
+We offer wholesale pricing for:
+- Optical retailers and eyewear stores
+- Corporate gifting programs
+- Employee wellness programs
+- Educational institutions
+- Gym and fitness centers
+
+**Minimum Order**: Contact us for current minimums
+
+**What We Provide Wholesale Partners:**
+- Volume pricing discounts
+- Marketing materials and displays
+- Product training for your staff
+- Dedicated account manager
+- Custom packaging options (for large orders)
+
+**How to Inquire**
+
+Contact us with the following information:
+1. Business name and website
+2. Type of business (retail, corporate, etc.)
+3. Estimated order quantity
+4. Desired product mix (models, sizes)
+5. Your contact name, email, and phone
+6. Any specific requirements
+
+**Partnership Opportunities**
+
+We're also interested in:
+- Retail distribution partnerships
+- Co-branding opportunities
+- Affiliate programs
+- Influencer collaborations
+- Technology integration partners
+
+**Contact**
+
+Email: info@lucyd.co
+Subject: "Wholesale Inquiry" or "Partnership Inquiry"
+
+Or fill out the contact form on our website and select "Wholesale/Partnership" as the category.
+
+We typically respond to wholesale inquiries within 2-3 business days.
+
+---
+
+### Article 9.9: Lucyd Pro Insurance: Is It Worth It?
+
+**Title:** Lucyd Pro Insurance: Is It Worth It?
+**Category:** Warranty & Protection
+**Tags:** insurance, Lucyd Pro, worth it, protection, value
+
+---
+
+**Wondering if Lucyd Pro is a smart purchase? Here's an honest breakdown.**
+
+**What Lucyd Pro Adds Beyond Standard Warranty**
+
+| Protection | Standard Warranty (Free) | Lucyd Pro (Paid) |
+|------------|--------------------------|------------------|
+| Manufacturing defects | ✅ 1 year | ✅ 2 years |
+| Accidental drops | ❌ | ✅ |
+| Cracked/broken frames | ❌ (if accidental) | ✅ |
+| Water damage | ❌ | ✅ |
+| Theft | ❌ | ✅ (with police report) |
+
+**The Big Question: Frames**
+
+25% of all support tickets involve broken frames. Without Lucyd Pro:
+- Accidental frame damage = no free replacement
+- You'll need to purchase a new pair or pay for repair
+- Replacement cost is full retail price
+
+With Lucyd Pro:
+- Accidental frame damage = small deductible for replacement
+- Covers drops, impacts, and accidents
+- 2 claims during coverage period
+
+**Who Should Get Lucyd Pro?**
+
+**Strongly recommended if you:**
+- Are active or play sports while wearing glasses
+- Have a history of breaking glasses
+- Chose Lucyd as your only pair of glasses
+- Ordered expensive prescription lenses
+- Work in environments where damage is likely
+- Travel frequently
+
+**May not need it if you:**
+- Are very careful with eyewear
+- Have backup glasses
+- Primarily use indoors at a desk
+- Ordered non-prescription (lower replacement cost)
+
+**Cost Comparison**
+
+Think about it this way:
+- Lucyd Pro cost: A fraction of a new pair
+- Replacement without insurance: Full retail price
+- If you use even one claim, Lucyd Pro typically saves you money
+
+**How to Purchase**
+
+Lucyd Pro is available at checkout when ordering your glasses. It cannot be added after purchase.
+
+**Bottom Line**
+
+If your Lucyd glasses are your primary eyewear, especially with prescription lenses, Lucyd Pro is a smart investment. The most common damage type (broken frames from accidental causes) is exactly what it covers.
+
+---
+
+### Article 9.10: Common Frame Issues & When to Contact Us
+
+**Title:** Common Frame Issues & When to Contact Us
+**Category:** Warranty & Protection
+**Tags:** frame, issues, common, preventive, care
+
+---
+
+**Know what's normal, what's fixable at home, and when to reach out.**
+
+**Normal Wear (No Action Needed)**
+
+These are normal and don't require support:
+- Minor scratches on frame surface after months of use
+- Nose pads becoming slightly compressed over time
+- Slight loosening of fit (can be adjusted)
+- Temple tips softening with regular use
+
+**Fixable at Home**
+
+| Issue | DIY Fix |
+|-------|---------|
+| Loose hinge screw | Tighten with eyeglass screwdriver |
+| Loose nose pads | Gently push back into place |
+| Temples too tight | Warm gently with hairdryer, bend outward slightly |
+| Temples too loose | Warm gently, bend inward slightly |
+| Dirty frame | Clean with mild soap and lukewarm water |
+
+**⚠️ Be Gentle:** When adjusting temples, apply minimal force. Excessive bending can cause permanent damage.
+
+**Contact Us For**
+
+| Issue | Priority | Why |
+|-------|----------|-----|
+| Hinge broken or cracked | High | Likely warranty or replacement needed |
+| Temple snapped | High | Cannot be repaired at home |
+| Nose bridge cracked | High | Structural damage |
+| Frame cracked anywhere | High | Replacement needed |
+| Screw won't hold despite tightening | Medium | May need thread repair |
+| Frame bent significantly | Medium | May affect electronics |
+| Repeated same issue | Medium | Quality concern |
+
+**Preventive Care Tips**
+
+1. **Always use two hands** to put on and remove glasses
+2. **Store in the pouch** when not wearing
+3. **Never place face-down** on hard surfaces
+4. **Don't push up on the bridge** with one finger (stresses the frame)
+5. **Avoid leaving in hot cars** (heat can warp frames)
+6. **Don't wear on top of head** (stretches temples)
+7. **Clean regularly** (sweat and oils can degrade materials)
+
+**When Frame Damage Is Urgent**
+
+Contact us immediately if:
+- Sharp edges from a break (safety risk)
+- Broken lens near eyes
+- Electronics exposed from frame damage
+- Damage during first week of ownership
+
+**How to Contact Us**
+
+Have your order number ready and include photos of any damage. This speeds up the process significantly!
+
+---
+
 *End of Help Center Articles*
-*Total Articles: 72*
-*Version: 2.0 - Complete*
-*Last Updated: January 2026*
+*Total Articles: 82*
+*Version: 3.0 - Broken Frames & Physical Damage Update*
+*Last Updated: February 2026*

@@ -21,13 +21,136 @@ Flows automate customer interactions on Chat, Help Center, and Contact Forms. Ba
 "Hi! 👋 Welcome to Lucyd. How can I help you today?"
 
 [Quick Reply Buttons]
+├── 🔨 My Frames Are Broken/Damaged  **(NEW -- Position #1, 25% of tickets)**
 ├── 🚚 Track My Order
 ├── 🔧 Technical Support
 ├── 💊 Prescription Help
 ├── ↩️ Returns & Exchanges
-├── 🛒 Product Questions
-└── 💬 Talk to Agent
+└── 💬 Talk to Someone
 ```
+
+---
+
+#### Flow 1.7: Broken Frames / Physical Damage Triage (**CRITICAL NEW FLOW**)
+**Trigger**: "My Frames Are Broken/Damaged" button (Position #1) OR keywords: broke, broken, snapped, cracked frame, hinge broke, temple broke, frame split, arm fell off, glasses broke
+
+**Priority**: This is the #1 ticket driver (25% of all volume) with ZERO existing automation.
+
+```
+[Customer reports broken/damaged frames]
+         │
+         ▼
+[Ask for order # and purchase date]
+"I'm sorry to hear about the damage to your Lucyd glasses! I'll help you figure out the best path forward.
+
+Could you please provide:
+1. Your order number
+2. Approximately when did you purchase them?"
+         │
+         ▼
+[Customer provides info]
+         │
+         ▼
+[Ask: How did the damage happen?]
+"Thanks! Now I need to understand what happened to determine your coverage options."
+
+[Quick Reply Buttons]
+├── 🔧 Normal Use (broke while wearing, adjusting, or opening/closing)
+├── 💥 Drop or Impact (fell off table, fell off face, etc.)
+├── 🪑 Sat on / Stepped on / Crushed
+└── ❓ Not Sure / Other
+         │
+    ┌────┴─────────────────┐
+    ▼                      ▼
+[Normal Use]           [Accidental / Other]
+    │                      │
+    ▼                      ▼
+[Request photos]       [Request photos + ask about insurance]
+"To assess the damage,  "To assess the damage and present your
+please send 2-3 photos:  options, please send 2-3 photos and let
+1. Full frame overview   me know: Do you have Lucyd Pro insurance?
+2. Close-up of damage    [Photos same as left]"
+3. Break point detail"
+    │                      │
+    ▼                      ▼
+[Check purchase date]  [Branch on insurance]
+    │                      │
+┌───┴───┐             ┌───┴───┐
+│       │             │       │
+<12mo   >12mo         Has     No
+│       │             Pro     Pro
+│       │             │       │
+▼       ▼             ▼       ▼
+[Warranty [Out-of-   [Insurance [Present
+Eligible] Warranty]  Claim]     Options]
+│         │           │          │
+▼         ▼           ▼          ▼
+"This looks  "While this   "Great news  "Here are your
+like it may  isn't covered  - Lucyd Pro  options:
+be covered   under        covers this!  1. Discounted
+under your   warranty,    I'll start    replacement
+1-year       here are     your claim.   2. Paid repair
+warranty!    your         Small         3. Upgrade
+We'll review options..."  deductible    trade-in"
+and send a                applies."
+replacement
+if approved."
+         │
+         ▼
+[ALL PATHS → Create enriched ticket]
+Tags: WARRANTY, broken-frame, damage-assessment
++ path-specific tags (defect, accidental, insurance, lucyd-pro)
+Priority: HIGH
+Assign to: Warranty & Returns team
+Include: order#, purchase date, damage description, photos, coverage path
+         │
+         ▼
+[Closing message]
+"I've created a priority ticket with all your details. Our Warranty team
+will follow up within 1 business day with next steps.
+
+Is there anything else I can help with?"
+[Buttons: "No, Thanks!" | "Another Question" | "Talk to Agent Now"]
+```
+
+**Escalation Triggers (override to immediate human):**
+- Customer disputes damage classification
+- Repeat warranty claim (2nd+ claim on same order)
+- Customer expresses frustration/anger → Trigger escalation flow
+- Safety concern (sharp edges, lens near eyes) → URGENT priority
+- Customer mentions legal action → Trigger Rule 4 override
+
+**Must-Collect Information:**
+1. Order number (required)
+2. Purchase date / approximate timeline (required)
+3. How damage happened - normal use vs accident (required)
+4. 2-3 photos from different angles (required)
+5. Whether customer has Lucyd Pro insurance (required for accidental)
+
+**Resolution Criteria:**
+- Customer is informed of their coverage status
+- All required information collected
+- Enriched ticket created for human review
+- Customer given clear timeline (1 business day follow-up)
+
+**Guardrails:**
+- NEVER promise warranty coverage before human review
+- NEVER process replacements directly -- always create ticket for human
+- ALWAYS collect photos before classifying damage
+- ALWAYS offer human handoff if customer expresses frustration
+- Maximum 4 exchanges before offering direct agent connection
+
+**Connected Macros:**
+- `WARRANTY: Broken Frame Triage` (initial response)
+- `WARRANTY: Damage Assessment - Defect` (warranty-eligible classification)
+- `WARRANTY: Damage Assessment - Accidental` (out-of-warranty options)
+- `WARRANTY: Lucyd Pro Insurance Claim Start` (insurance path)
+
+**Connected Articles:**
+- "My Frames Are Broken -- What Are My Options?"
+- "How to Photograph Damage for a Warranty Claim"
+- "Warranty vs Accidental Damage: What's Covered?"
+- "Broken Frames FAQ: Hinges, Temples, Nose Bridge"
 
 ---
 
@@ -443,26 +566,28 @@ If "Product Questions":
 
 ## Implementation Priority
 
-### Phase 1: High Impact (Week 1)
-| Flow | Channel | Expected Deflection |
-|------|---------|---------------------|
-| Order Tracking | Chat | 30-40% of order inquiries |
-| Technical Support | Chat | 20-30% of tech issues |
-| Contact Form Pre-Qual | Form | 15-20% of submissions |
+### Phase 1: Critical Gap + High Impact (Weeks 1-2)
+| Flow | Channel | Expected Deflection | Priority |
+|------|---------|---------------------|----------|
+| **Broken Frames Triage** | **Chat** | **30% triage completeness** | **#1 CRITICAL** |
+| Order Tracking | Chat | 30-40% of order inquiries | #2 |
+| Technical Support | Chat | 20-30% of tech issues | #3 |
+| Contact Form Pre-Qual | Form | 15-20% of submissions | #4 |
 
-### Phase 2: Medium Impact (Week 2)
+### Phase 2: Expand Coverage (Weeks 3-4)
 | Flow | Channel | Expected Deflection |
 |------|---------|---------------------|
 | Prescription Help | Chat | 25-35% of Rx questions |
 | Returns Flow | Chat | 20-30% of return requests |
 | Help Center Topics | Help Center | Ongoing self-service |
 
-### Phase 3: Optimization (Week 3+)
+### Phase 3: Full Coverage + Optimization (Weeks 5+)
 | Flow | Channel | Purpose |
 |------|---------|---------|
 | Product Questions | Chat | Pre-sale conversion |
-| Welcome Flow | Chat | Better routing |
+| Welcome Flow | Chat | Better routing (broken frames #1) |
 | Form Optimization | Form | Faster resolution |
+| Broken Frames refinement | Chat | Improve classification accuracy |
 
 ---
 

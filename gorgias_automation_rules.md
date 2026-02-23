@@ -249,10 +249,11 @@ Body contains: "wrong size"
 ```
 Body contains: "warranty"
 Body contains: "defect"
-Body contains: "broken"
 Body contains: "stopped working"
 Body contains: "manufacturing"
 Body contains: "faulty"
+Body contains: "warranty claim"
+Body contains: "covered under warranty"
 ```
 
 **Actions:**
@@ -334,18 +335,202 @@ Talk soon!
 
 ---
 
+## Rule 9: Broken Frame Detector
+
+**Purpose:** Identify and prioritize broken frame / physical damage tickets -- the #1 ticket driver (25% of all tickets)
+
+**Configuration:**
+
+| Setting | Value |
+|---------|-------|
+| Rule Name | Broken Frame Detector |
+| Status | Active |
+| Trigger | Ticket created |
+| Priority | HIGH |
+
+**Conditions (ANY):**
+```
+Body contains: "broke"
+Body contains: "broken"
+Body contains: "snapped"
+Body contains: "cracked frame"
+Body contains: "cracked frames"
+Body contains: "hinge broke"
+Body contains: "temple broke"
+Body contains: "frame split"
+Body contains: "frame broke"
+Body contains: "frame cracked"
+Body contains: "glasses broke"
+Body contains: "glasses broken"
+Body contains: "glasses snapped"
+Body contains: "arm fell off"
+Body contains: "arm broke"
+Body contains: "snapped in half"
+Body contains: "nose bridge broke"
+Body contains: "nose bridge cracked"
+```
+
+**Exclude Conditions (to avoid overlap with shipping damage):**
+```
+Body does NOT contain: "arrived broken"
+Body does NOT contain: "delivered broken"
+Body does NOT contain: "came broken"
+Body does NOT contain: "shipping damage"
+```
+*Note: If exclude conditions match, let Rule 5 (Return Request Tagger) or order damage rules handle it instead.*
+
+**Actions:**
+1. Add tags: `WARRANTY`, `broken-frame`
+2. Set priority: High
+3. Assign to: Warranty & Returns team
+4. Apply macro: `WARRANTY: Broken Frame Triage` (if available)
+
+**Auto-Response:**
+```
+Hi {{ticket.customer.firstname | default: 'there'}},
+
+I'm sorry to hear about the damage to your Lucyd glasses! Let me help you figure out the best path forward.
+
+To assess your situation quickly, I need a few things:
+
+1. Your order number
+2. Approximately when did the damage happen?
+3. How did the damage occur? (normal use, drop, impact, etc.)
+4. 2-3 photos of the damage from different angles
+5. Do you have Lucyd Pro insurance?
+
+Once I have these details, I can determine your coverage and present your options right away.
+
+In the meantime, here are some helpful resources:
+- My Frames Are Broken -- What Are My Options?: [Help Center Link]
+- How to Photograph Damage: [Help Center Link]
+
+We'll take care of you!
+```
+
+---
+
+## Rule 10: Cancellation Urgent
+
+**Purpose:** Flag cancellation requests as HIGH priority for immediate action (time-sensitive)
+
+**Configuration:**
+
+| Setting | Value |
+|---------|-------|
+| Rule Name | Cancellation Urgent |
+| Status | Active |
+| Trigger | Ticket created |
+| Priority | HIGH |
+
+**Conditions (ANY):**
+```
+Body contains: "cancel my order"
+Body contains: "cancel order"
+Body contains: "cancellation"
+Body contains: "want to cancel"
+Body contains: "need to cancel"
+Body contains: "please cancel"
+Body contains: "stop my order"
+```
+
+**Actions:**
+1. Add tags: `ORDER`, `cancel`
+2. Set priority: High
+3. Assign to: Order Support team
+4. Apply macro: `ORDER: Cancellation Request Intake`
+
+**Auto-Response:**
+```
+Hi {{ticket.customer.firstname | default: 'there'}},
+
+We received your cancellation request and are treating this as urgent.
+
+To process this as quickly as possible, please confirm:
+1. Your order number
+2. Reason for cancellation (helps us improve)
+
+Important timing note:
+- Within 2 hours of ordering: Best chance for full cancellation
+- After fulfillment begins: We may not be able to cancel, but can help with a return
+
+A team member will respond ASAP. If your order was placed very recently, we'll do everything we can to catch it before it ships.
+```
+
+---
+
+## Rule 11: Missing Delivery
+
+**Purpose:** Identify and route missing package/delivery tickets
+
+**Configuration:**
+
+| Setting | Value |
+|---------|-------|
+| Rule Name | Missing Delivery Detector |
+| Status | Active |
+| Trigger | Ticket created |
+| Priority | NORMAL |
+
+**Conditions (ANY):**
+```
+Body contains: "never received"
+Body contains: "missing package"
+Body contains: "lost package"
+Body contains: "says delivered"
+Body contains: "not delivered"
+Body contains: "never arrived"
+Body contains: "didn't receive"
+Body contains: "didn't arrive"
+Body contains: "package lost"
+Body contains: "where is my package"
+```
+
+**Actions:**
+1. Add tags: `ORDER`, `missing-item`
+2. Set priority: Normal
+3. Assign to: Order Support team
+
+**Auto-Response:**
+```
+Hi {{ticket.customer.firstname | default: 'there'}},
+
+I'm sorry to hear your order may be missing. Let's track it down.
+
+Please provide:
+1. Your order number
+2. Does tracking show "Delivered" or is it still "In Transit"?
+
+While we investigate, please check:
+- All entry points (front door, side door, back porch, mailbox)
+- With neighbors or building management
+- For a delivery photo in your tracking details
+- With other household members who may have received it
+
+If tracking shows "Delivered" but you can't find it:
+- Wait 24 hours (packages are sometimes marked early)
+- Contact the carrier with your tracking number
+
+We'll help resolve this -- whether that means tracking it down, reshipping, or issuing a refund.
+```
+
+---
+
 ## Rule Priority Order
 
 Rules are evaluated in this order (first match wins for conflicting actions):
 
 1. **Urgent Escalation** (highest priority - safety net)
-2. **WISMO Auto-Response**
-3. **Bluetooth Auto-Help**
-4. **Prescription Upload Help**
-5. **Return Request Tagger**
-6. **Warranty Claim Identifier**
-7. **Social Media Lead Capture**
-8. **After-Hours Auto-Response** (lowest priority)
+2. **Broken Frame Detector** (HIGH priority - #1 ticket driver)
+3. **Cancellation Urgent** (HIGH priority - time-sensitive)
+4. **WISMO Auto-Response**
+5. **Bluetooth Auto-Help**
+6. **Prescription Upload Help**
+7. **Return Request Tagger**
+8. **Warranty Claim Identifier**
+9. **Missing Delivery Detector**
+10. **Social Media Lead Capture**
+11. **After-Hours Auto-Response** (lowest priority)
 
 ---
 
@@ -359,8 +544,12 @@ Rules are evaluated in this order (first match wins for conflicting actions):
 - [ ] Create Rule 6: Warranty Claim Identifier
 - [ ] Create Rule 7: Social Media Lead Capture
 - [ ] Create Rule 8: After-Hours Auto-Response
+- [ ] Create Rule 9: Broken Frame Detector (**CRITICAL - 25% of tickets**)
+- [ ] Create Rule 10: Cancellation Urgent
+- [ ] Create Rule 11: Missing Delivery Detector
 - [ ] Test each rule with sample tickets
 - [ ] Monitor for false positives/negatives
+- [ ] Verify Rule 9 doesn't overlap with shipping damage (Rule 5)
 
 ---
 
@@ -375,6 +564,10 @@ Rules are evaluated in this order (first match wins for conflicting actions):
 | "I can't upload my prescription" | `PRESCRIPTION`, `upload-issue` | Prescription Services |
 | "I want to return my glasses" | `RETURN` | Warranty & Returns |
 | "The speaker is broken, is this under warranty?" | `WARRANTY`, `defect` | Warranty & Returns |
+| "My frames broke" | `WARRANTY`, `broken-frame` | Warranty & Returns |
+| "The hinge snapped on my glasses" | `WARRANTY`, `broken-frame` | Warranty & Returns |
+| "I need to cancel my order" | `ORDER`, `cancel` | Order Support |
+| "My order says delivered but I never got it" | `ORDER`, `missing-item` | Order Support |
 | "I'm contacting my lawyer about this" | `escalated`, `urgent`, `legal-risk` | Manager |
 
 ---
@@ -390,5 +583,6 @@ To create/edit rules:
 
 ---
 
-*Document Version: 1.0*
-*Last Updated: January 2026*
+*Document Version: 2.0*
+*Last Updated: February 2026*
+*Changes: Added Rules 9-11 (Broken Frame Detector, Cancellation Urgent, Missing Delivery), updated Rule 6 keywords, updated priority order*

@@ -20,12 +20,14 @@ This plan provides a complete Help Center architecture for lucyd.co, designed to
 | Category | Icon | Description | Est. Ticket % |
 |----------|------|-------------|---------------|
 | **Getting Started** | Rocket | Setup, pairing, first-time use | 15% |
-| **Orders & Shipping** | Package | Order status, tracking, delivery | 25% |
-| **Prescription Lenses** | Eye | Rx orders, PD, lens options | 20% |
-| **Technical Support** | Wrench | Bluetooth, audio, charging | 20% |
-| **Returns & Exchanges** | Refresh | Return process, refunds | 10% |
-| **Warranty & Protection** | Shield | Coverage, claims, insurance | 5% |
-| **Product Information** | Glasses | Features, care, compatibility | 5% |
+| **Orders & Shipping** | Package | Order status, tracking, delivery | 20% |
+| **Prescription Lenses** | Eye | Rx orders, PD, lens options | 13% |
+| **Technical Support** | Wrench | Bluetooth, audio, charging | 6% |
+| **Returns & Exchanges** | Refresh | Return process, refunds | 5% |
+| **Warranty & Protection** | Shield | Coverage, claims, insurance, **broken frames** | **26%** |
+| **Product Information** | Glasses | Features, care, compatibility, promos | 8% |
+
+*Note: Warranty & Protection is now the highest-volume category due to broken frames (25.1% of all tickets). Updated based on Intercom conversation analysis (Jan-Jun 2025, ~997 conversations).*
 
 ---
 
@@ -55,7 +57,7 @@ This plan provides a complete Help Center architecture for lucyd.co, designed to
 
 ---
 
-### Orders & Shipping (12 articles)
+### Orders & Shipping (13 articles -- 12 original + 1 new)
 
 **Subcategory: Order Status**
 | # | Article | Visual Assets |
@@ -80,6 +82,11 @@ This plan provides a complete Help Center architecture for lucyd.co, designed to
 | 10 | My order arrived damaged | Photo guide |
 | 11 | Part of my order is missing | Checklist |
 | 12 | How to cancel my order | Timeline |
+
+**NEW**
+| # | Article | Visual Assets | Priority |
+|---|---------|---------------|----------|
+| 13 | **Amazon Orders: How to Get Support** | Channel redirect guide | P1 |
 
 ---
 
@@ -161,20 +168,29 @@ This plan provides a complete Help Center architecture for lucyd.co, designed to
 
 ---
 
-### Warranty & Protection (6 articles)
+### Warranty & Protection (11 articles -- 6 original + 5 new broken frames)
 
 | # | Article | Visual Assets |
 |---|---------|---------------|
-| 1 | What does 1-year warranty cover? | Coverage checklist |
+| 1 | What does 1-year warranty cover? (UPDATED) | Coverage checklist + frame damage table |
 | 2 | What is NOT covered under warranty? | Exclusions list |
-| 3 | How to file a warranty claim | Step-by-step |
+| 3 | How to file a warranty claim (UPDATED) | Step-by-step + broken frame photo guide |
 | 4 | What is Lucyd Pro 2-Year Insurance? | Feature comparison |
 | 5 | Warranty vs Insurance: What's the difference? | Side-by-side chart |
 | 6 | How to file an insurance claim | Claim flowchart |
 
+**NEW - Broken Frames & Physical Damage (Critical Gap - 25% of tickets)**
+| # | Article | Visual Assets | Priority |
+|---|---------|---------------|----------|
+| 7 | **My Frames Are Broken -- What Are My Options?** | Decision flowchart | **CRITICAL** |
+| 8 | **How to Photograph Damage for a Warranty Claim** | Photo example guide | **CRITICAL** |
+| 9 | **Warranty vs Accidental Damage: What's Covered?** | Comparison table | **CRITICAL** |
+| 10 | **Frame Damage Assessment Guide (Internal)** | Assessment checklist | **CRITICAL** |
+| 11 | **Broken Frames FAQ: Hinges, Temples, Nose Bridge** | Component diagram | **CRITICAL** |
+
 ---
 
-### Product Information (8 articles)
+### Product Information (11 articles -- 8 original + 3 new)
 
 | # | Article | Visual Assets |
 |---|---------|---------------|
@@ -186,6 +202,13 @@ This plan provides a complete Help Center architecture for lucyd.co, designed to
 | 6 | Storage and travel tips | Best practices infographic |
 | 7 | What devices work with Lucyd? | Compatibility matrix |
 | 8 | Using Lucyd while driving | Safety guidelines |
+
+**NEW - High-Priority Gap Articles**
+| # | Article | Visual Assets | Priority |
+|---|---------|---------------|----------|
+| 9 | **Current Promotions & How to Apply Discount Codes** | Checkout screenshot | P1 |
+| 10 | **Wholesale & Partnership Inquiries** | Inquiry form guide | P1 |
+| 11 | **Lucyd Pro Insurance: Is It Worth It?** | Cost comparison chart | P1 |
 
 ---
 
@@ -307,10 +330,12 @@ Yes: Close | No: Offer to accept Rx via email reply
 
 | Button | Sub-options |
 |--------|-------------|
+| **My Frames Are Broken/Damaged** | **-> Damage Triage, Warranty Check, Photo Collection (NEW - #1 position)** |
 | Track My Order | -> Order Management integration |
 | Technical Support | -> Bluetooth, Audio, Charging, Other |
-| Returns & Refunds | -> Start Return, Refund Status, Policy |
 | Prescription Help | -> Upload Issue, PD Question, Processing |
+| Returns & Exchanges | -> Start Return, Refund Status, Policy |
+| Talk to Someone | -> Direct agent connection |
 
 ---
 
@@ -338,12 +363,15 @@ Yes: Close | No: Offer to accept Rx via email reply
 | Document | Purpose |
 |----------|---------|
 | `gorgias_tag_taxonomy.md` | Tag structure and naming conventions |
-| `gorgias_automation_rules.md` | Rule configurations |
-| `gorgias_macros.py` | Macro creation script |
-| `gorgias_help_articles.md` | Full article content |
+| `gorgias_automation_rules.md` | Rule configurations (10 rules, incl. Broken Frame Detector) |
+| `gorgias_macros.py` | Macro creation script (34 macros, incl. 8 new) |
+| `gorgias_help_articles.md` | Full article content (82 articles, incl. 10 new) |
+| `gorgias_flows_master.md` | All flow implementations (7 flows, incl. Broken Frames Triage) |
+| `gorgias_flows_plan.md` | Flow specifications and configurations |
 | `gorgias_implementation_checklist.md` | Rollout tasks and phases |
 
 ---
 
-*Document Version: 2.0*
-*Last Updated: January 2026*
+*Document Version: 3.0*
+*Last Updated: February 2026*
+*Changes: Added broken frames articles (5 critical), gap articles (5 P1), updated category volumes, added chat widget broken frames button, updated article counts and related docs*
