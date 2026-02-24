@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucyd - Gorgias Chat Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #115cb5; }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .test-messages {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .test-messages li { margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <h1>Lucyd Gorgias Chat Test Page</h1>
+
+    <div class="note">
+        <strong>Testing only.</strong> This page loads the Gorgias chat widget so you can test it without touching your live Shopify site. Click the chat bubble in the bottom-right corner.
+    </div>
+
+    <div class="test-messages">
+        <h2>Test Messages to Try</h2>
+        <ul>
+            <li><strong>Broken frames:</strong> "My frames broke"</li>
+            <li><strong>Order status:</strong> "Where is my order?"</li>
+            <li><strong>Prescription:</strong> "How do I upload my prescription?"</li>
+            <li><strong>Return:</strong> "I want to return my glasses"</li>
+            <li><strong>Tech support:</strong> "My Bluetooth won't connect"</li>
+            <li><strong>Pre-sale:</strong> "Are these FSA/HSA eligible?"</li>
+            <li><strong>Escalation:</strong> "I want to talk to a manager"</li>
+        </ul>
+    </div>
+
+    <!-- Gorgias Chat Widget (v2 loader with numeric app ID) -->
+    <script id="gorgias-chat-widget-install-v2"
+        src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=83694"
+        defer></script>
+</body>
+</html>
