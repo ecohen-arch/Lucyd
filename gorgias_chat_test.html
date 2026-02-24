@@ -12,7 +12,19 @@
             padding: 20px;
             background: #f5f5f5;
         }
-        h1 { color: #115cb5; }
+        h1 { color: #151515; }
+        .reset-btn {
+            background: #151515;
+            color: #DBFF00;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .reset-btn:hover { opacity: 0.85; }
         .note {
             background: #fff3cd;
             border: 1px solid #ffc107;
@@ -32,8 +44,10 @@
 <body>
     <h1>Lucyd Gorgias Chat Test Page</h1>
 
+    <button class="reset-btn" onclick="resetChat()">Reset Chat Session</button>
+
     <div class="note">
-        <strong>Testing only.</strong> This page loads the Gorgias chat widget so you can test it without touching your live Shopify site. Click the chat bubble in the bottom-right corner.
+        <strong>Testing only.</strong> This page loads the Gorgias chat widget so you can test it without touching your live Shopify site. Click the chat bubble in the bottom-right corner. Use the <strong>Reset Chat Session</strong> button above to start a fresh conversation.
     </div>
 
     <div class="test-messages">
@@ -48,6 +62,25 @@
             <li><strong>Escalation:</strong> "I want to talk to a manager"</li>
         </ul>
     </div>
+
+    <script>
+    function resetChat() {
+        // Clear all Gorgias-related storage
+        Object.keys(localStorage).forEach(function(key) {
+            if (key.toLowerCase().indexOf('gorgias') >= 0) localStorage.removeItem(key);
+        });
+        Object.keys(sessionStorage).forEach(function(key) {
+            if (key.toLowerCase().indexOf('gorgias') >= 0) sessionStorage.removeItem(key);
+        });
+        document.cookie.split(';').forEach(function(c) {
+            if (c.toLowerCase().indexOf('gorgias') >= 0) {
+                var name = c.split('=')[0].trim();
+                document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+            }
+        });
+        window.location.reload();
+    }
+    </script>
 
     <!-- Gorgias Chat Widget (v2 loader with numeric app ID) -->
     <script id="gorgias-chat-widget-install-v2"
