@@ -1,0 +1,221 @@
+{
+  "sections": {
+    "hero": {
+      "type": "loyalty-hero",
+      "settings": {
+        "heading": "LUCYD REWARDS",
+        "subheading": "Earn. Save. Repeat.",
+        "description": "Join the Lucyd Rewards program and earn points on every purchase, referral, and more. Unlock exclusive perks and VIP benefits.",
+        "cta_text": "Join Now",
+        "cta2_text": "Learn More",
+        "height": "medium",
+        "layout": "center",
+        "overlay_opacity": 60,
+        "text_color": "#ffffff",
+        "accent_color": "#DBFF00"
+      }
+    },
+    "how-it-works": {
+      "type": "loyalty-how-it-works",
+      "blocks": {
+        "step-shop": {
+          "type": "step",
+          "settings": {
+            "icon": "theme-bag",
+            "title": "Shop & Earn",
+            "description": "Earn points on every purchase you make at Lucyd."
+          }
+        },
+        "step-unlock": {
+          "type": "step",
+          "settings": {
+            "icon": "theme-lock",
+            "title": "Unlock Rewards",
+            "description": "Redeem your points for discounts and exclusive perks."
+          }
+        },
+        "step-save": {
+          "type": "step",
+          "settings": {
+            "icon": "theme-sale-tag",
+            "title": "Save & Repeat",
+            "description": "Level up your tier for even bigger rewards."
+          }
+        }
+      },
+      "block_order": [
+        "step-shop",
+        "step-unlock",
+        "step-save"
+      ],
+      "settings": {
+        "heading": "HOW IT WORKS",
+        "subheading": "Start earning rewards in 3 simple steps",
+        "heading_size": "h3",
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-6",
+        "spacing_top": "4",
+        "spacing_bottom": "4"
+      }
+    },
+    "ways-to-earn": {
+      "type": "loyalty-ways-to-earn",
+      "blocks": {
+        "earn-purchases": {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-bag",
+            "title": "Make a Purchase",
+            "points": "5 pts per $1 spent",
+            "description": "Earn points on every order automatically."
+          }
+        },
+        "earn-referrals": {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-heart",
+            "title": "Refer a Friend",
+            "points": "500 pts",
+            "description": "Give a friend $10 off and earn points when they buy."
+          }
+        },
+        "earn-social": {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-share",
+            "title": "Follow on Social",
+            "points": "100 pts",
+            "description": "Follow us on Instagram, TikTok, or Facebook."
+          }
+        },
+        "earn-reviews": {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-star",
+            "title": "Write a Review",
+            "points": "200 pts",
+            "description": "Share your experience with a product review."
+          }
+        },
+        "earn-birthday": {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-gift",
+            "title": "Birthday Bonus",
+            "points": "250 pts",
+            "description": "Get bonus points on your birthday every year."
+          }
+        },
+        "earn-newsletter": {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-paper-plane",
+            "title": "Join Newsletter",
+            "points": "150 pts",
+            "description": "Subscribe to our email list for points and updates."
+          }
+        }
+      },
+      "block_order": [
+        "earn-purchases",
+        "earn-referrals",
+        "earn-social",
+        "earn-reviews",
+        "earn-birthday",
+        "earn-newsletter"
+      ],
+      "settings": {
+        "heading": "WAYS TO EARN",
+        "subheading": "Multiple ways to rack up points",
+        "heading_size": "h3",
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-6",
+        "spacing_top": "2",
+        "spacing_bottom": "4"
+      }
+    },
+    "tiers": {
+      "type": "loyalty-tiers",
+      "blocks": {
+        "tier-bronze": {
+          "type": "tier",
+          "settings": {
+            "title": "Bronze",
+            "tier_handle": "bronze",
+            "points_required": "0 – 499 pts",
+            "multiplier": "1x Points",
+            "perks": "<ul><li>Earn points on purchases</li><li>Birthday bonus</li><li>Member-only offers</li></ul>",
+            "is_featured": false
+          }
+        },
+        "tier-silver": {
+          "type": "tier",
+          "settings": {
+            "title": "Silver",
+            "tier_handle": "silver",
+            "points_required": "500 – 1,499 pts",
+            "multiplier": "1.25x Points",
+            "perks": "<ul><li>All Bronze perks</li><li>Early access to sales</li><li>Free shipping on orders</li></ul>",
+            "is_featured": false
+          }
+        },
+        "tier-gold": {
+          "type": "tier",
+          "settings": {
+            "title": "Gold",
+            "tier_handle": "gold",
+            "points_required": "1,500 – 4,999 pts",
+            "multiplier": "1.5x Points",
+            "perks": "<ul><li>All Silver perks</li><li>Exclusive Gold discounts</li><li>Priority customer support</li><li>Free gift with purchase</li></ul>",
+            "is_featured": true
+          }
+        },
+        "tier-platinum": {
+          "type": "tier",
+          "settings": {
+            "title": "Platinum",
+            "tier_handle": "platinum",
+            "points_required": "5,000+ pts",
+            "multiplier": "2x Points",
+            "perks": "<ul><li>All Gold perks</li><li>VIP early product access</li><li>Annual loyalty gift</li><li>Concierge support</li></ul>",
+            "is_featured": false
+          }
+        }
+      },
+      "block_order": [
+        "tier-bronze",
+        "tier-silver",
+        "tier-gold",
+        "tier-platinum"
+      ],
+      "settings": {
+        "heading": "VIP TIERS",
+        "subheading": "The more you spend, the more you earn",
+        "heading_size": "h3",
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-6",
+        "spacing_top": "2",
+        "spacing_bottom": "4"
+      }
+    },
+    "okendo-widget": {
+      "type": "loyalty-okendo-widget",
+      "settings": {
+        "heading": "YOUR REWARDS",
+        "subheading": "Log in to view your points balance, redeem rewards, and track your tier status.",
+        "heading_size": "h3",
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-6",
+        "spacing_top": "2",
+        "spacing_bottom": "4"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "how-it-works",
+    "ways-to-earn",
+    "tiers",
+    "okendo-widget"
+  ]
+}

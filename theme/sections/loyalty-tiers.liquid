@@ -1,0 +1,231 @@
+{{- 'section-loyalty-tiers.css' | asset_url | stylesheet_tag -}}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} > div {
+    padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
+    padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
+  }
+{%- endstyle -%}
+
+<div class="loyalty-tiers color-{{ section.settings.color_scheme }} gradient js-animation-fade-in">
+  <div class="container {{ section.settings.section_width }}">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="section__heading {{ section.settings.heading_size }}">
+        {{- section.settings.heading -}}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="loyalty-tiers__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    <div class="loyalty-tiers__grid">
+      {%- for block in section.blocks -%}
+        <div class="loyalty-tiers__card{% if block.settings.is_featured %} loyalty-tiers__card--featured{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.is_featured -%}
+            <div class="loyalty-tiers__badge">Most Popular</div>
+          {%- endif -%}
+
+          <div class="loyalty-tiers__header">
+            <h3 class="loyalty-tiers__name h6">{{ block.settings.title }}</h3>
+            {%- if block.settings.points_required != blank -%}
+              <p class="loyalty-tiers__range">{{ block.settings.points_required }}</p>
+            {%- endif -%}
+          </div>
+
+          <div class="loyalty-tiers__body">
+            {%- if block.settings.multiplier != blank -%}
+              <p class="loyalty-tiers__multiplier">{{ block.settings.multiplier }}</p>
+            {%- endif -%}
+
+            {%- if block.settings.perks != blank -%}
+              <div class="loyalty-tiers__perks">
+                {{ block.settings.perks }}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Loyalty Tiers",
+  "tag": "section",
+  "class": "section-loyalty-tiers",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "VIP TIERS"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "The more you spend, the more you earn"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "h6", "label": "XS" },
+        { "value": "h5", "label": "S" },
+        { "value": "h4", "label": "M" },
+        { "value": "h3", "label": "L" },
+        { "value": "h2", "label": "XL" }
+      ],
+      "default": "h3"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        { "value": "max-w-page", "label": "Page" },
+        { "value": "max-w-narrower", "label": "Narrower" },
+        { "value": "max-w-fluid", "label": "Full width" }
+      ],
+      "default": "max-w-page"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-6"
+    },
+    {
+      "type": "select",
+      "id": "spacing_top",
+      "label": "Top spacing",
+      "options": [
+        { "value": "0", "label": "No" },
+        { "value": "1", "label": "S" },
+        { "value": "2", "label": "M" },
+        { "value": "4", "label": "L" },
+        { "value": "6", "label": "XL" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "spacing_bottom",
+      "label": "Bottom spacing",
+      "options": [
+        { "value": "0", "label": "No" },
+        { "value": "1", "label": "S" },
+        { "value": "2", "label": "M" },
+        { "value": "4", "label": "L" },
+        { "value": "6", "label": "XL" }
+      ],
+      "default": "4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tier",
+      "name": "Tier",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tier name",
+          "default": "Tier"
+        },
+        {
+          "type": "text",
+          "id": "tier_handle",
+          "label": "Tier handle",
+          "info": "Used by Okendo to match tiers (e.g. bronze, silver, gold, platinum)"
+        },
+        {
+          "type": "text",
+          "id": "points_required",
+          "label": "Points range",
+          "info": "e.g. 0 – 499 pts",
+          "default": "0 – 499 pts"
+        },
+        {
+          "type": "text",
+          "id": "multiplier",
+          "label": "Points multiplier",
+          "info": "e.g. 1x Points",
+          "default": "1x Points"
+        },
+        {
+          "type": "richtext",
+          "id": "perks",
+          "label": "Perks list",
+          "default": "<ul><li>Earn points on purchases</li><li>Birthday bonus</li><li>Member-only offers</li></ul>"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_featured",
+          "label": "Featured tier",
+          "info": "Highlights this tier with an accent border and badge",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Loyalty Tiers",
+      "blocks": [
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Bronze",
+            "tier_handle": "bronze",
+            "points_required": "0 – 499 pts",
+            "multiplier": "1x Points",
+            "perks": "<ul><li>Earn points on purchases</li><li>Birthday bonus</li><li>Member-only offers</li></ul>",
+            "is_featured": false
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Silver",
+            "tier_handle": "silver",
+            "points_required": "500 – 1,499 pts",
+            "multiplier": "1.25x Points",
+            "perks": "<ul><li>All Bronze perks</li><li>Early access to sales</li><li>Free shipping on orders</li></ul>",
+            "is_featured": false
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Gold",
+            "tier_handle": "gold",
+            "points_required": "1,500 – 4,999 pts",
+            "multiplier": "1.5x Points",
+            "perks": "<ul><li>All Silver perks</li><li>Exclusive Gold discounts</li><li>Priority customer support</li><li>Free gift with purchase</li></ul>",
+            "is_featured": true
+          }
+        },
+        {
+          "type": "tier",
+          "settings": {
+            "title": "Platinum",
+            "tier_handle": "platinum",
+            "points_required": "5,000+ pts",
+            "multiplier": "2x Points",
+            "perks": "<ul><li>All Gold perks</li><li>VIP early product access</li><li>Annual loyalty gift</li><li>Concierge support</li></ul>",
+            "is_featured": false
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

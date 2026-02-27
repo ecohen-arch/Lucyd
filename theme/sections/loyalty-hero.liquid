@@ -1,0 +1,397 @@
+{% liquid
+  assign heading = section.settings.heading
+  assign subheading = section.settings.subheading
+  assign description = section.settings.description
+  assign cta_text = section.settings.cta_text
+  assign cta_url = section.settings.cta_url
+  assign cta2_text = section.settings.cta2_text
+  assign cta2_url = section.settings.cta2_url
+  assign image = section.settings.image
+  assign mobile_image = section.settings.mobile_image
+  assign overlay_opacity = section.settings.overlay_opacity
+  assign layout = section.settings.layout
+  assign height = section.settings.height
+%}
+
+<section
+  class="loyalty-hero loyalty-hero--{{ height }} loyalty-hero--{{ layout }} section-{{ section.id }}"
+  style="
+    --loyalty-hero-overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }};
+    --loyalty-hero-text-color: {{ section.settings.text_color }};
+    --loyalty-hero-accent-color: {{ section.settings.accent_color }};
+  "
+  aria-label="{{ heading | strip_html | escape }}"
+>
+  {% if image %}
+    <div class="loyalty-hero__media">
+      {% if mobile_image %}
+        <picture>
+          <source
+            media="(min-width: 750px)"
+            srcset="{{ image | image_url: width: 2000 }}"
+          >
+          <img
+            src="{{ mobile_image | image_url: width: 900 }}"
+            alt="{{ mobile_image.alt | escape }}"
+            loading="eager"
+            width="{{ mobile_image.width }}"
+            height="{{ mobile_image.height }}"
+            class="loyalty-hero__image"
+          >
+        </picture>
+      {% else %}
+        <img
+          src="{{ image | image_url: width: 2000 }}"
+          alt="{{ image.alt | escape }}"
+          loading="eager"
+          width="{{ image.width }}"
+          height="{{ image.height }}"
+          class="loyalty-hero__image"
+        >
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="loyalty-hero__overlay" aria-hidden="true"></div>
+
+  <div class="loyalty-hero__content">
+    {% if subheading != blank %}
+      <p class="loyalty-hero__subheading">{{ subheading }}</p>
+    {% endif %}
+
+    {% if heading != blank %}
+      <h1 class="loyalty-hero__heading">{{ heading }}</h1>
+    {% endif %}
+
+    {% if description != blank %}
+      <p class="loyalty-hero__description">{{ description }}</p>
+    {% endif %}
+
+    {% if cta_text != blank or cta2_text != blank %}
+      <div class="loyalty-hero__actions">
+        {% if cta_text != blank %}
+          <a href="{{ cta_url }}" class="loyalty-hero__cta loyalty-hero__cta--primary">
+            {{ cta_text }}
+          </a>
+        {% endif %}
+        {% if cta2_text != blank %}
+          <a href="{{ cta2_url }}" class="loyalty-hero__cta loyalty-hero__cta--secondary">
+            {{ cta2_text }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% style %}
+  .section-{{ section.id }} {
+    --loyalty-hero-text-color: {{ section.settings.text_color }};
+    --loyalty-hero-accent-color: {{ section.settings.accent_color }};
+  }
+{% endstyle %}
+
+{% stylesheet %}
+  .loyalty-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    color: var(--loyalty-hero-text-color, #fff);
+  }
+
+  .loyalty-hero--full {
+    min-height: 100dvh;
+  }
+
+  .loyalty-hero--large {
+    min-height: 70dvh;
+  }
+
+  .loyalty-hero--medium {
+    min-height: 50dvh;
+  }
+
+  .loyalty-hero--center {
+    text-align: center;
+  }
+
+  .loyalty-hero--center .loyalty-hero__content {
+    align-items: center;
+  }
+
+  .loyalty-hero--left {
+    text-align: start;
+  }
+
+  .loyalty-hero--left .loyalty-hero__content {
+    align-items: flex-start;
+  }
+
+  .loyalty-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .loyalty-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .loyalty-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, var(--loyalty-hero-overlay-opacity, 0.4));
+    pointer-events: none;
+  }
+
+  .loyalty-hero__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: min(100%, 900px);
+    padding: 3rem 1.5rem;
+  }
+
+  .loyalty-hero__subheading {
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin: 0;
+  }
+
+  .loyalty-hero__heading {
+    font-family: var(--font-heading, 'Figtree', sans-serif);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .loyalty-hero__description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .loyalty-hero--center .loyalty-hero__description {
+    margin-inline: auto;
+  }
+
+  .loyalty-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-block-start: 0.5rem;
+  }
+
+  .loyalty-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0;
+    min-height: 44px;
+    min-width: 44px;
+    transition: opacity 0.2s ease;
+  }
+
+  .loyalty-hero__cta:focus-visible {
+    outline: 2px solid var(--loyalty-hero-accent-color, #DBFF00);
+    outline-offset: 2px;
+  }
+
+  .loyalty-hero__cta--primary {
+    background: var(--loyalty-hero-accent-color, #DBFF00);
+    color: #000000;
+  }
+
+  .loyalty-hero__cta--primary:hover {
+    opacity: 0.85;
+  }
+
+  .loyalty-hero__cta--secondary {
+    background: transparent;
+    color: var(--loyalty-hero-text-color, #fff);
+    border: 1px solid currentColor;
+  }
+
+  .loyalty-hero__cta--secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  @media screen and (max-width: 749px) {
+    .loyalty-hero__content {
+      padding: 2rem 1.25rem;
+    }
+
+    .loyalty-hero__actions {
+      flex-direction: column;
+    }
+
+    .loyalty-hero__cta {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .loyalty-hero__cta {
+      transition: none;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Loyalty Hero",
+  "tag": "section",
+  "class": "loyalty-hero-section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "LUCYD REWARDS"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Earn. Save. Repeat."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Join the Lucyd Rewards program and earn points on every purchase, referral, and more. Unlock exclusive perks and VIP benefits."
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Primary button text",
+      "default": "Join Now"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "cta2_text",
+      "label": "Secondary button text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "cta2_url",
+      "label": "Secondary button link"
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile background image"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Height",
+      "default": "medium",
+      "options": [
+        { "value": "full", "label": "Full screen" },
+        { "value": "large", "label": "Large" },
+        { "value": "medium", "label": "Medium" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "center",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "left", "label": "Left" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "default": 60,
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#DBFF00"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Loyalty Hero",
+      "settings": {
+        "heading": "LUCYD REWARDS",
+        "subheading": "Earn. Save. Repeat.",
+        "description": "Join the Lucyd Rewards program and earn points on every purchase, referral, and more. Unlock exclusive perks and VIP benefits.",
+        "cta_text": "Join Now",
+        "cta2_text": "Learn More",
+        "height": "medium",
+        "layout": "center",
+        "overlay_opacity": 60,
+        "text_color": "#ffffff",
+        "accent_color": "#DBFF00"
+      }
+    }
+  ],
+  "disabled_on": {
+    "templates": ["password"]
+  }
+}
+{% endschema %}

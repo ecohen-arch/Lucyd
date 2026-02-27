@@ -1,0 +1,117 @@
+.loyalty-tiers .section__heading {
+  text-align: center;
+  margin-block-end: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.loyalty-tiers__subheading {
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+  margin-block-start: 0;
+  margin-block-end: calc(var(--section-spacing-unit-size) * 2);
+}
+
+.loyalty-tiers__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-spacing, 2rem);
+}
+
+.loyalty-tiers__card {
+  display: flex;
+  flex-direction: column;
+  background: #111111;
+  border: 0.1rem solid #333333;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.loyalty-tiers__card--featured {
+  border-color: #DBFF00;
+}
+
+.loyalty-tiers__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #DBFF00;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+}
+
+.loyalty-tiers__header {
+  padding: 2.4rem 2rem 1.6rem;
+  border-bottom: 0.1rem solid #333333;
+}
+
+.loyalty-tiers__name {
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--font-heading-letter-spacing);
+}
+
+.loyalty-tiers__range {
+  margin: 0;
+  font-size: 1.2rem;
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.loyalty-tiers__body {
+  padding: 1.6rem 2rem 2.4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.loyalty-tiers__multiplier {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #DBFF00;
+  margin: 0 0 1.2rem;
+}
+
+.loyalty-tiers__perks {
+  margin: 0;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.7;
+}
+
+.loyalty-tiers__perks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.loyalty-tiers__perks li {
+  padding-inline-start: 1.6rem;
+  position: relative;
+  margin-block-end: 0.4rem;
+}
+
+.loyalty-tiers__perks li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #DBFF00;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 989px) {
+  .loyalty-tiers__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .loyalty-tiers__grid {
+    grid-template-columns: 1fr;
+  }
+}

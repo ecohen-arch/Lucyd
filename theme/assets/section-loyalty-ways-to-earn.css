@@ -1,0 +1,90 @@
+.loyalty-ways-to-earn .section__heading {
+  text-align: center;
+  margin-block-end: calc(var(--section-spacing-unit-size) * 2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.loyalty-ways-to-earn__subheading {
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+  margin-block-start: 0;
+  margin-block-end: calc(var(--section-spacing-unit-size) * 2);
+}
+
+.loyalty-ways-to-earn__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-spacing, 2rem);
+}
+
+.loyalty-ways-to-earn__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.2rem 2.4rem;
+  background: #111111;
+  border: 0.1rem solid #333333;
+  border-radius: 0;
+  transition: box-shadow var(--duration-default), transform var(--duration-default);
+}
+
+.loyalty-ways-to-earn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-block-end: 1.6rem;
+}
+
+.loyalty-ways-to-earn__icon svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #DBFF00;
+}
+
+.loyalty-ways-to-earn__title {
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: var(--font-heading-letter-spacing);
+}
+
+.loyalty-ways-to-earn__points {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #DBFF00;
+  margin: 0 0 0.8rem;
+}
+
+.loyalty-ways-to-earn__description {
+  margin: 0;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.5;
+}
+
+@media (hover: hover) {
+  .loyalty-ways-to-earn__card:hover {
+    box-shadow: 0 0.4rem 1.6rem rgba(219, 255, 0, 0.1);
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .loyalty-ways-to-earn__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .loyalty-ways-to-earn__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loyalty-ways-to-earn__card {
+    padding: 2.4rem 2rem;
+  }
+}

@@ -1,0 +1,188 @@
+{{- 'section-loyalty-how-it-works.css' | asset_url | stylesheet_tag -}}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} > div {
+    padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
+    padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
+  }
+{%- endstyle -%}
+
+<div class="loyalty-how-it-works color-{{ section.settings.color_scheme }} gradient js-animation-fade-in">
+  <div class="container {{ section.settings.section_width }}">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="section__heading {{ section.settings.heading_size }}">
+        {{- section.settings.heading -}}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="loyalty-how-it-works__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    <div class="loyalty-how-it-works__grid">
+      {%- for block in section.blocks -%}
+        {%- unless forloop.first -%}
+          <div class="loyalty-how-it-works__chevron" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        {%- endunless -%}
+
+        <div class="loyalty-how-it-works__step" {{ block.shopify_attributes }}>
+          <div class="loyalty-how-it-works__number">
+            {%- if block.settings.icon != blank -%}
+              <div class="loyalty-how-it-works__icon">
+                {% render 'icon', icon_name: block.settings.icon %}
+              </div>
+            {%- else -%}
+              {{ forloop.index }}
+            {%- endif -%}
+          </div>
+          <h3 class="loyalty-how-it-works__title h6">{{ block.settings.title }}</h3>
+          {%- if block.settings.description != blank -%}
+            <p class="loyalty-how-it-works__description">{{ block.settings.description }}</p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Loyalty How It Works",
+  "tag": "section",
+  "class": "section-loyalty-how-it-works",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "HOW IT WORKS"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Start earning rewards in 3 simple steps"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "h6", "label": "XS" },
+        { "value": "h5", "label": "S" },
+        { "value": "h4", "label": "M" },
+        { "value": "h3", "label": "L" },
+        { "value": "h2", "label": "XL" }
+      ],
+      "default": "h3"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        { "value": "max-w-page", "label": "Page" },
+        { "value": "max-w-narrower", "label": "Narrower" },
+        { "value": "max-w-fluid", "label": "Full width" }
+      ],
+      "default": "max-w-page"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-6"
+    },
+    {
+      "type": "select",
+      "id": "spacing_top",
+      "label": "Top spacing",
+      "options": [
+        { "value": "0", "label": "No" },
+        { "value": "1", "label": "S" },
+        { "value": "2", "label": "M" },
+        { "value": "4", "label": "L" },
+        { "value": "6", "label": "XL" }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "select",
+      "id": "spacing_bottom",
+      "label": "Bottom spacing",
+      "options": [
+        { "value": "0", "label": "No" },
+        { "value": "1", "label": "S" },
+        { "value": "2", "label": "M" },
+        { "value": "4", "label": "L" },
+        { "value": "6", "label": "XL" }
+      ],
+      "default": "4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "info": "e.g. theme-bag, theme-lock, theme-sale-tag. Leave blank to show step number."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Step"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Loyalty How It Works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "icon": "theme-bag",
+            "title": "Shop & Earn",
+            "description": "Earn points on every purchase you make at Lucyd."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "theme-lock",
+            "title": "Unlock Rewards",
+            "description": "Redeem your points for discounts and exclusive perks."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "theme-sale-tag",
+            "title": "Save & Repeat",
+            "description": "Level up your tier for even bigger rewards."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

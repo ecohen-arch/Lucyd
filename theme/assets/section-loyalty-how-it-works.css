@@ -1,0 +1,121 @@
+.loyalty-how-it-works .section__heading {
+  text-align: center;
+  margin-block-end: calc(var(--section-spacing-unit-size) * 2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.loyalty-how-it-works__subheading {
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+  margin-block-start: 0;
+  margin-block-end: calc(var(--section-spacing-unit-size) * 2);
+}
+
+.loyalty-how-it-works__grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.loyalty-how-it-works__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 28rem;
+  padding: 0 2rem;
+}
+
+.loyalty-how-it-works__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 0.2rem solid #DBFF00;
+  border-radius: 50%;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #DBFF00;
+  margin-block-end: 1.6rem;
+  flex-shrink: 0;
+}
+
+.loyalty-how-it-works__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.loyalty-how-it-works__icon svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #DBFF00;
+}
+
+.loyalty-how-it-works__title {
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: var(--font-heading-letter-spacing);
+}
+
+.loyalty-how-it-works__description {
+  margin: 0;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.5;
+}
+
+/* Chevron connector between steps */
+.loyalty-how-it-works__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 4rem;
+  padding-block-start: 2rem;
+}
+
+.loyalty-how-it-works__chevron svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: rgba(var(--color-foreground), 0.4);
+}
+
+/* Tablet */
+@media screen and (max-width: 989px) {
+  .loyalty-how-it-works__step {
+    max-width: none;
+    padding: 0 1.6rem;
+  }
+
+  .loyalty-how-it-works__chevron {
+    width: 3rem;
+  }
+}
+
+/* Mobile — stack vertically */
+@media screen and (max-width: 749px) {
+  .loyalty-how-it-works__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .loyalty-how-it-works__step {
+    padding: 0;
+    max-width: 30rem;
+  }
+
+  .loyalty-how-it-works__chevron {
+    padding-block-start: 0;
+    padding: 1.2rem 0;
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,217 @@
+{{- 'section-loyalty-ways-to-earn.css' | asset_url | stylesheet_tag -}}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} > div {
+    padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
+    padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
+  }
+{%- endstyle -%}
+
+<div class="loyalty-ways-to-earn color-{{ section.settings.color_scheme }} gradient js-animation-fade-in">
+  <div class="container {{ section.settings.section_width }}">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="section__heading {{ section.settings.heading_size }}">
+        {{- section.settings.heading -}}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="loyalty-ways-to-earn__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    <div class="loyalty-ways-to-earn__grid">
+      {%- for block in section.blocks -%}
+        <div class="loyalty-ways-to-earn__card" {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != blank -%}
+            <div class="loyalty-ways-to-earn__icon">
+              {% render 'icon', icon_name: block.settings.icon %}
+            </div>
+          {%- endif -%}
+          <h3 class="loyalty-ways-to-earn__title h6">{{ block.settings.title }}</h3>
+          {%- if block.settings.points != blank -%}
+            <p class="loyalty-ways-to-earn__points">{{ block.settings.points }}</p>
+          {%- endif -%}
+          {%- if block.settings.description != blank -%}
+            <p class="loyalty-ways-to-earn__description">{{ block.settings.description }}</p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Loyalty Ways to Earn",
+  "tag": "section",
+  "class": "section-loyalty-ways-to-earn",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "WAYS TO EARN"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Multiple ways to rack up points"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "h6", "label": "XS" },
+        { "value": "h5", "label": "S" },
+        { "value": "h4", "label": "M" },
+        { "value": "h3", "label": "L" },
+        { "value": "h2", "label": "XL" }
+      ],
+      "default": "h3"
+    },
+    {
+      "type": "header",
+      "content": "Section settings"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        { "value": "max-w-page", "label": "Page" },
+        { "value": "max-w-narrower", "label": "Narrower" },
+        { "value": "max-w-fluid", "label": "Full width" }
+      ],
+      "default": "max-w-page"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-6"
+    },
+    {
+      "type": "select",
+      "id": "spacing_top",
+      "label": "Top spacing",
+      "options": [
+        { "value": "0", "label": "No" },
+        { "value": "1", "label": "S" },
+        { "value": "2", "label": "M" },
+        { "value": "4", "label": "L" },
+        { "value": "6", "label": "XL" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "spacing_bottom",
+      "label": "Bottom spacing",
+      "options": [
+        { "value": "0", "label": "No" },
+        { "value": "1", "label": "S" },
+        { "value": "2", "label": "M" },
+        { "value": "4", "label": "L" },
+        { "value": "6", "label": "XL" }
+      ],
+      "default": "4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "earn_action",
+      "name": "Earn Action",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "info": "e.g. theme-bag, theme-heart, theme-star",
+          "default": "theme-star"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Action"
+        },
+        {
+          "type": "text",
+          "id": "points",
+          "label": "Points value",
+          "info": "e.g. 5 pts per $1 spent",
+          "default": "5 pts per $1"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Loyalty Ways to Earn",
+      "blocks": [
+        {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-bag",
+            "title": "Make a Purchase",
+            "points": "5 pts per $1 spent",
+            "description": "Earn points on every order automatically."
+          }
+        },
+        {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-heart",
+            "title": "Refer a Friend",
+            "points": "500 pts",
+            "description": "Give a friend $10 off and earn points when they buy."
+          }
+        },
+        {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-share",
+            "title": "Follow on Social",
+            "points": "100 pts",
+            "description": "Follow us on Instagram, TikTok, or Facebook."
+          }
+        },
+        {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-star",
+            "title": "Write a Review",
+            "points": "200 pts",
+            "description": "Share your experience with a product review."
+          }
+        },
+        {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-gift",
+            "title": "Birthday Bonus",
+            "points": "250 pts",
+            "description": "Get bonus points on your birthday every year."
+          }
+        },
+        {
+          "type": "earn_action",
+          "settings": {
+            "icon": "theme-paper-plane",
+            "title": "Join Newsletter",
+            "points": "150 pts",
+            "description": "Subscribe to our email list for points and updates."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
